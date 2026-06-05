@@ -1,10 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="Observability foundations for platform teams: signals, ownership, dashboards, alert quality, and response paths.">
+    <meta name="description"
+        content="Observability foundations for platform teams: signals, ownership, dashboards, alert quality, and response paths.">
     <meta name="author" content="Akkireddy Challa">
     <title>Observability Foundations | Akkireddy Challa</title>
     <link rel="shortcut icon" href="../favicon.ico" type="image/x-icon">
@@ -14,7 +16,24 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="../libs/font-awesome/css/font-awesome.min.css">
     <link href="../css/styles.css" rel="stylesheet">
+    <meta name="twitter:creator" content="@akkireddy95">
+    <meta property="og:image" content="https://akkireddy95.github.io/images/lead-bg.jpg">
+    <meta name="twitter:card" content="summary_large_image">
+    <link rel="canonical" href="https://akkireddy95.github.io/writing/observability-for-platforms.html">
+    <script type="application/ld+json">
+        {"@context":"https://schema.org","@type":"Article","headline":"Observability foundations for platform teams","author":{"@type":"Person","name":"Akkireddy Challa"},"publisher":{"@type":"Organization","name":"Akkireddy Challa"},"mainEntityOfPage":{"@type":"WebPage","@id":"https://akkireddy95.github.io/writing/observability-for-platforms.html"}}
+        </script>
+
+    <!-- Google Analytics placeholder (replace G-XXXXXXX with your GA4 ID) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXX"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+        gtag('config', 'G-XXXXXXX', { 'anonymize_ip': true });
+    </script>
 </head>
+
 <body>
     <header class="site-header">
         <a class="brand" href="../index.html" aria-label="Akkireddy Challa home">AC</a>
@@ -32,18 +51,30 @@
             <p class="eyebrow">Observability</p>
             <h1>Observability foundations for platform teams</h1>
             <p class="article-meta">By Akkireddy Challa / Updated 2026</p>
-            <p>Observability is not the number of dashboards a team has. It is the ability to understand what a system is doing, why it is behaving that way, and who should act when the signal matters.</p>
+            <p>Observability is not the number of dashboards a team has. It is the ability to understand what a system
+                is doing, why it is behaving that way, and who should act when the signal matters.</p>
             <h2>Begin with service ownership</h2>
-            <p>Every useful alert needs an owner. If nobody knows who should respond, the alert becomes background noise. Platform teams can provide standards, but service teams need clear responsibility for their own runtime health.</p>
+            <p>Every useful alert needs an owner. If nobody knows who should respond, the alert becomes background
+                noise. Platform teams can provide standards, but service teams need clear responsibility for their own
+                runtime health.</p>
             <h2>Choose signals before dashboards</h2>
-            <p>Dashboards are useful after the important signals are known. I start with latency, traffic, errors, saturation, deployment health, dependency health, and cost-sensitive resource usage. Then I design views around questions engineers actually ask during incidents.</p>
+            <p>Dashboards are useful after the important signals are known. I start with latency, traffic, errors,
+                saturation, deployment health, dependency health, and cost-sensitive resource usage. Then I design views
+                around questions engineers actually ask during incidents.</p>
             <h2>Make alerts actionable</h2>
-            <p>An alert should point toward an action. It should include context, severity, service ownership, and a first response path. If an alert only says something changed, it may be better as a dashboard signal than a page.</p>
+            <p>An alert should point toward an action. It should include context, severity, service ownership, and a
+                first response path. If an alert only says something changed, it may be better as a dashboard signal
+                than a page.</p>
             <h2>Connect incidents to platform improvements</h2>
-            <p>The best observability work happens after incidents. Every incident can reveal missing signals, weak runbooks, unclear ownership, or fragile architecture. Platform teams should turn those findings into reusable improvements.</p>
+            <p>The best observability work happens after incidents. Every incident can reveal missing signals, weak
+                runbooks, unclear ownership, or fragile architecture. Platform teams should turn those findings into
+                reusable improvements.</p>
             <h2>Use tools as part of a system</h2>
-            <p>Datadog, Prometheus, Grafana, CloudWatch, and Google Cloud Monitoring are all useful, but tooling alone is not the foundation. The foundation is a shared model for telemetry, response, and continuous improvement.</p>
+            <p>Datadog, Prometheus, Grafana, CloudWatch, and Google Cloud Monitoring are all useful, but tooling alone
+                is not the foundation. The foundation is a shared model for telemetry, response, and continuous
+                improvement.</p>
         </article>
     </main>
 </body>
+
 </html>

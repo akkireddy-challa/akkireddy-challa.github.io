@@ -1,10 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="A practical cloud platform operating model for reliability, delivery speed, IAM, observability, and cost ownership.">
+    <meta name="description"
+        content="A practical cloud platform operating model for reliability, delivery speed, IAM, observability, and cost ownership.">
     <meta name="author" content="Akkireddy Challa">
     <title>Cloud Platform Operating Model | Akkireddy Challa</title>
     <link rel="shortcut icon" href="../favicon.ico" type="image/x-icon">
@@ -14,7 +16,24 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="../libs/font-awesome/css/font-awesome.min.css">
     <link href="../css/styles.css" rel="stylesheet">
+    <meta name="twitter:creator" content="@akkireddy95">
+    <meta property="og:image" content="https://akkireddy95.github.io/images/lead-bg.jpg">
+    <meta name="twitter:card" content="summary_large_image">
+    <link rel="canonical" href="https://akkireddy95.github.io/writing/cloud-platform-operating-model.html">
+    <script type="application/ld+json">
+        {"@context":"https://schema.org","@type":"Article","headline":"How I think about building a cloud platform operating model","author":{"@type":"Person","name":"Akkireddy Challa"},"publisher":{"@type":"Organization","name":"Akkireddy Challa"},"mainEntityOfPage":{"@type":"WebPage","@id":"https://akkireddy95.github.io/writing/cloud-platform-operating-model.html"}}
+        </script>
+
+    <!-- Google Analytics placeholder (replace G-XXXXXXX with your GA4 ID) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXX"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+        gtag('config', 'G-XXXXXXX', { 'anonymize_ip': true });
+    </script>
 </head>
+
 <body>
     <header class="site-header">
         <a class="brand" href="../index.html" aria-label="Akkireddy Challa home">AC</a>
@@ -32,18 +51,34 @@
             <p class="eyebrow">Platform engineering</p>
             <h1>How I think about building a cloud platform operating model</h1>
             <p class="article-meta">By Akkireddy Challa / Updated 2026</p>
-            <p>A cloud platform is not only a collection of Terraform modules, Kubernetes clusters, CI jobs, dashboards, and IAM policies. Those pieces matter, but the real product is the operating model around them. A good platform gives teams a clear way to build, deploy, observe, secure, and improve services without inventing a new process every time.</p>
+            <p>A cloud platform is not only a collection of Terraform modules, Kubernetes clusters, CI jobs, dashboards,
+                and IAM policies. Those pieces matter, but the real product is the operating model around them. A good
+                platform gives teams a clear way to build, deploy, observe, secure, and improve services without
+                inventing a new process every time.</p>
             <h2>Start with ownership</h2>
-            <p>The first question I ask is simple: who owns what when something breaks? If the answer is unclear, the platform will create confusion even when the tooling is modern. Service teams need ownership of their applications. Platform teams need ownership of the paved roads, shared controls, and infrastructure contracts. Security and finance need visibility without becoming manual approval bottlenecks.</p>
+            <p>The first question I ask is simple: who owns what when something breaks? If the answer is unclear, the
+                platform will create confusion even when the tooling is modern. Service teams need ownership of their
+                applications. Platform teams need ownership of the paved roads, shared controls, and infrastructure
+                contracts. Security and finance need visibility without becoming manual approval bottlenecks.</p>
             <h2>Design paved roads, not cages</h2>
-            <p>The best platform path should be the easiest path. That means reusable templates, clear module boundaries, documented environments, standard deployment flows, and observability that works by default. Teams should still be able to solve unusual problems, but the standard path should cover the common 80 percent with high confidence.</p>
+            <p>The best platform path should be the easiest path. That means reusable templates, clear module
+                boundaries, documented environments, standard deployment flows, and observability that works by default.
+                Teams should still be able to solve unusual problems, but the standard path should cover the common 80
+                percent with high confidence.</p>
             <h2>Make reliability visible</h2>
-            <p>A platform operating model needs reliability signals. I look for service-level indicators, alert ownership, deployment health, incident review loops, and change failure visibility. Without this, teams often mistake silence for stability.</p>
+            <p>A platform operating model needs reliability signals. I look for service-level indicators, alert
+                ownership, deployment health, incident review loops, and change failure visibility. Without this, teams
+                often mistake silence for stability.</p>
             <h2>Include cost from the beginning</h2>
-            <p>FinOps works best when cost is part of architecture, not a surprise at the end of the month. Tagging, budgets, autoscaling, right-sizing, and environment lifecycle rules should be visible in the platform contract.</p>
+            <p>FinOps works best when cost is part of architecture, not a surprise at the end of the month. Tagging,
+                budgets, autoscaling, right-sizing, and environment lifecycle rules should be visible in the platform
+                contract.</p>
             <h2>Keep improving the contract</h2>
-            <p>A platform is never finished. The operating model should include feedback from developers, production incidents, audit findings, cost reviews, and delivery bottlenecks. Every improvement should make the next service easier to launch and easier to operate.</p>
+            <p>A platform is never finished. The operating model should include feedback from developers, production
+                incidents, audit findings, cost reviews, and delivery bottlenecks. Every improvement should make the
+                next service easier to launch and easier to operate.</p>
         </article>
     </main>
 </body>
+
 </html>
