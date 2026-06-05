@@ -428,7 +428,7 @@ html[data-theme='dark'] .skill-groups>div {
 .oss-grid,
 .skill-groups {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
     gap: 18px;
 }
 
@@ -478,6 +478,109 @@ html[data-theme='dark'] .skill-groups>div {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 18px;
+}
+
+.writing-search {
+    display: grid;
+    gap: 14px;
+    margin-bottom: 24px;
+}
+
+.search-label {
+    font-weight: 800;
+    color: var(--text);
+}
+
+.search-input {
+    width: 100%;
+    min-height: 48px;
+    padding: 14px 18px;
+    border-radius: 16px;
+    border: 1px solid rgba(16, 20, 24, 0.12);
+    background: rgba(255, 255, 255, 0.9);
+    color: var(--text);
+}
+
+html[data-theme='dark'] .search-input {
+    background: rgba(10, 16, 26, 0.88);
+    border-color: rgba(255, 255, 255, 0.12);
+}
+
+.tag-filters {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.tag-pill {
+    border: 1px solid rgba(16, 20, 24, 0.16);
+    border-radius: 999px;
+    background: rgba(255, 255, 255, 0.9);
+    color: var(--text);
+    padding: 10px 14px;
+    font-size: 0.82rem;
+    cursor: pointer;
+    transition: transform 0.2s ease, box-shadow 0.2s ease, border-color 0.2s ease;
+}
+
+.tag-pill:hover {
+    transform: translateY(-1px);
+}
+
+.tag-pill.active {
+    background: var(--blue);
+    color: #fff;
+    border-color: var(--blue);
+}
+
+.clear-filters {
+    border: none;
+    background: transparent;
+    color: var(--blue);
+    font-weight: 700;
+    cursor: pointer;
+    padding: 0;
+    margin-top: 8px;
+    text-decoration: underline;
+}
+
+.clear-filters:hover,
+.clear-filters:focus {
+    color: var(--text);
+}
+
+.article-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin: 16px 0;
+}
+
+.tag-link {
+    border: 1px solid rgba(16, 20, 24, 0.16);
+    background: rgba(255, 255, 255, 0.9);
+    border-radius: 999px;
+    color: var(--text);
+    padding: 8px 12px;
+    font-size: 0.9rem;
+    text-decoration: none;
+    transition: transform 0.2s ease, border-color 0.2s ease;
+}
+
+.tag-link:hover,
+.tag-link:focus {
+    transform: translateY(-1px);
+    border-color: var(--blue);
+}
+
+.no-results {
+    margin-top: 18px;
+    color: var(--muted);
+    font-style: italic;
+}
+
+.hidden {
+    display: none !important;
 }
 
 .skills-section {

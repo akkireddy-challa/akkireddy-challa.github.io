@@ -54,53 +54,73 @@
         </section>
 
         <section class="section writing-section page-section">
+            <div class="writing-search">
+                <label for="write-search" class="search-label">Search writing</label>
+                <input id="write-search" class="search-input" type="search"
+                    placeholder="Search articles, topics, or tags" aria-label="Search writing articles">
+                <div class="tag-filters" aria-label="Tag filters" role="group">
+                    <button type="button" class="tag-pill" data-tag="platform engineering">Platform</button>
+                    <button type="button" class="tag-pill" data-tag="terraform">Terraform</button>
+                    <button type="button" class="tag-pill" data-tag="observability">Observability</button>
+                    <button type="button" class="tag-pill" data-tag="ai infrastructure">AI</button>
+                    <button type="button" class="tag-pill" data-tag="ai ops">AI Ops</button>
+                    <button type="button" class="tag-pill" data-tag="finops">FinOps</button>
+                    <button type="button" class="tag-pill" data-tag="kubernetes">Kubernetes</button>
+                    <button type="button" class="tag-pill" data-tag="security">Security</button>
+                    <button type="button" class="tag-pill" data-tag="governance">Governance</button>
+                    <button type="button" class="tag-pill" data-tag="mlops">MLOps</button>
+                </div>
+                <button type="button" id="clear-filters" class="clear-filters"
+                    aria-label="Clear selected tags and search">Clear filters</button>
+            </div>
             <div class="writing-grid">
-                <article class="writing-card">
+                <article class="writing-card" data-tags="platform engineering,observability,cost,iam">
                     <span>Platform engineering</span>
                     <h3>How I think about building a cloud platform operating model</h3>
                     <p>A practical model for reliability, delivery speed, IAM, observability, and cost ownership.</p>
                     <a href="writing/cloud-platform-operating-model.html">Read article</a>
                 </article>
-                <article class="writing-card">
+                <article class="writing-card" data-tags="terraform,infrastructure,devops,best practices">
                     <span>Terraform</span>
                     <h3>Terraform best practices I keep coming back to</h3>
                     <p>Patterns for state, modules, reviews, naming, and repeatable infrastructure delivery.</p>
                     <a href="writing/terraform-best-practices.html">Read article</a>
                 </article>
-                <article class="writing-card">
+                <article class="writing-card" data-tags="observability,platform engineering,sre,monitoring">
                     <span>Observability</span>
                     <h3>Observability foundations for platform teams</h3>
                     <p>How to move from dashboards to signals, ownership, and reliable incident response.</p>
                     <a href="writing/observability-for-platforms.html">Read article</a>
                 </article>
-                <article class="writing-card">
+                <article class="writing-card" data-tags="ai infrastructure,mlops,governance,compute">
                     <span>AI infrastructure</span>
                     <h3>Practical infrastructure foundations for AI teams</h3>
                     <p>Governed environments, scalable compute, artifact paths, cost controls, and deployment
                         foundations.</p>
                     <a href="writing/ai-infrastructure-foundations.html">Read article</a>
                 </article>
-                <article class="writing-card">
+                <article class="writing-card" data-tags="ai ops,mlops,observability,governance,cost">
                     <span>AI Ops</span>
                     <h3>AI Ops trends to watch in 2026</h3>
                     <p>Practical shifts in model observability, reproducibility, governance, and cost-aware lifecycle.
                     </p>
                     <a href="writing/trending-ai-ops-2026.html">Read article</a>
                 </article>
-                <article class="writing-card">
+                <article class="writing-card" data-tags="finops,cost,autoscaling,telemetry">
                     <span>FinOps</span>
                     <h3>Cloud cost optimization patterns for 2026</h3>
                     <p>Autoscaling economics, spot strategies, and telemetry-driven rightsizing to control cloud spend.
                     </p>
                     <a href="writing/cloud-cost-optimization-2026.html">Read article</a>
                 </article>
-                <article class="writing-card">
+                <article class="writing-card" data-tags="kubernetes,security,policy,runtime protection">
                     <span>Kubernetes</span>
                     <h3>Kubernetes security priorities for 2026</h3>
                     <p>Supply chain hardening, RBAC least-privilege, and runtime protection approaches.</p>
                     <a href="writing/k8s-security-2026.html">Read article</a>
                 </article>
             </div>
+            <p class="no-results hidden">No articles match your search or selected tags.</p>
         </section>
     </main>
 
@@ -115,6 +135,99 @@
                     aria-hidden="true"></i></a>
         </div>
     </footer>
+    <script>
+        (function () {
+            const searchInput = document.getElementById('write-search');
+            const tagButtons = Array.from(document.querySelectorAll('.tag-pill'));
+            const cards = Array.from(document.querySelectorAll('.writing-card'));
+            const noResults = document.querySelector('.no-results');
+
+            const normalize = value => (value || '').toLowerCase();
+            const getQueryParam = name => new URLSearchParams(window.location.search).get(name);
+
+            const selectedTags = new Set();
+            const updateUrl = () => {
+                const params = new URLSearchParams(window.location.search);
+                if (selectedTags.size) {
+                    params.set('tag', Array.from(selectedTags).join(','));
+                } else {
+                    params.delete('tag');
+                }
+                if (searchInput.value.trim()) {
+                    params.set('q', searchInput.value.trim());
+                } else {
+                    params.delete('q');
+                }
+                history.replaceState(null, '', `${window.location.pathname}${params.toString() ? '?' + params.toString() : ''}`);
+            };
+
+            const filterCards = () => {
+                const query = normalize(searchInput.value);
+                let visible = 0;
+
+                cards.forEach(card => {
+                    const title = normalize(card.querySelector('h3').textContent);
+                    const desc = normalize(card.querySelector('p').textContent);
+                    const tags = normalize(card.dataset.tags);
+                    const queryMatch = !query || title.includes(query) || desc.includes(query) || tags.includes(query);
+                    const tagMatch = selectedTags.size === 0 || Array.from(selectedTags).some(tag => tags.includes(tag));
+                    const show = queryMatch && tagMatch;
+                    card.style.display = show ? 'flex' : 'none';
+                    if (show) visible += 1;
+                });
+
+                noResults.classList.toggle('hidden', visible > 0);
+            };
+
+            const toggleTag = button => {
+                const tag = button.dataset.tag;
+                if (selectedTags.has(tag)) {
+                    selectedTags.delete(tag);
+                    button.classList.remove('active');
+                } else {
+                    selectedTags.add(tag);
+                    button.classList.add('active');
+                }
+                updateUrl();
+                filterCards();
+            };
+
+            tagButtons.forEach(button => {
+                button.addEventListener('click', () => toggleTag(button));
+            });
+
+            const initialTag = getQueryParam('tag');
+            const initialQuery = getQueryParam('q');
+            if (initialQuery) {
+                searchInput.value = initialQuery;
+            }
+            if (initialTag) {
+                initialTag.split(',').map(t => t.trim().toLowerCase()).forEach(tag => {
+                    const button = tagButtons.find(btn => btn.dataset.tag === tag);
+                    if (button) {
+                        selectedTags.add(tag);
+                        button.classList.add('active');
+                    }
+                });
+            }
+
+            searchInput.addEventListener('input', () => {
+                updateUrl();
+                filterCards();
+            });
+
+            const clearFiltersButton = document.getElementById('clear-filters');
+            clearFiltersButton.addEventListener('click', () => {
+                selectedTags.clear();
+                tagButtons.forEach(btn => btn.classList.remove('active'));
+                searchInput.value = '';
+                updateUrl();
+                filterCards();
+            });
+
+            filterCards();
+        })();
+    </script>
 </body>
 
 </html>
