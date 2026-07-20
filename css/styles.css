@@ -781,7 +781,7 @@ html[data-theme='dark'] .search-input {
     max-width: 860px;
     margin: 0 auto;
     padding: 140px 20px 88px;
-    background: #fff;
+    background: var(--panel);
 }
 
 .article h1 {
@@ -897,7 +897,7 @@ html[data-theme='dark'] .article-navigation a {
     justify-content: space-between;
     gap: 20px;
     padding: 28px clamp(20px, 6vw, 88px);
-    background: #fff;
+    background: var(--panel);
     color: var(--muted);
 }
 
@@ -989,6 +989,19 @@ html[data-theme='dark'] .article-navigation a {
         gap: 8px 14px;
         max-width: 300px;
         font-size: 0.82rem;
+    }
+
+    .site-header > nav:not(.nav-menu) {
+        flex: 1;
+        flex-wrap: wrap;
+        justify-content: flex-end;
+        gap: 6px 12px;
+        font-size: 0.78rem;
+        line-height: 1.35;
+    }
+
+    .site-header > nav:not(.nav-menu) a {
+        padding: 5px 0;
     }
 
     .hero {
