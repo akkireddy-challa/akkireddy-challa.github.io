@@ -211,7 +211,7 @@ nav a:hover,
     color: #fff;
     background: radial-gradient(circle at 80% 22%, rgba(74, 212, 185, 0.28), transparent 23%),
         radial-gradient(circle at bottom left, rgba(240, 184, 79, 0.12), transparent 18%),
-        url("../images/lead-bg.jpg") center / cover no-repeat;
+        url("../images/cloud-platform-social.png") center / cover no-repeat;
 }
 
 .hero-overlay {
