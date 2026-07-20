@@ -31,6 +31,7 @@
 
 <body>
     <a class="skip-link" href="#article-content">Skip to article</a>
+    <div class="reading-progress" data-reading-progress aria-hidden="true"><span></span></div>
     <header class="site-header">
         <a class="brand" href="../index.html" aria-label="Akkireddy Challa home">AC</a>
         <nav aria-label="Primary navigation">
@@ -40,6 +41,10 @@
             <a href="../feed.xml" type="application/rss+xml">RSS</a>
             <a href="../index.html#contact">Contact</a>
         </nav>
+        <button id="theme-toggle" class="theme-toggle theme-toggle--compact" type="button" aria-label="Toggle theme">
+            <span class="theme-icon">☀️</span>
+            <span class="theme-text">Light mode</span>
+        </button>
     </header>
 
     <main>
@@ -71,6 +76,7 @@
             </nav>
         </article>
     </main>
+    <script src="../js/site-ui.js" defer></script>
 </body>
 
 </html>
