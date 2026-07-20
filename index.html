@@ -22,6 +22,8 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://akkireddy-challa.github.io/">
     <meta property="og:image" content="https://akkireddy-challa.github.io/images/lead-bg.jpg">
+    <link rel="canonical" href="https://akkireddy-challa.github.io/">
+    <link rel="alternate" type="application/rss+xml" title="Akkireddy Challa — Writing" href="feed.xml">
     <meta name="twitter:card" content="summary_large_image">
     <title>Akkireddy Challa | Multi-Cloud Platform Engineer</title>
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
@@ -72,6 +74,11 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <main id="top">
         <section class="hero">
             <div class="hero-overlay"></div>
+            <div class="hero-scene" aria-hidden="true">
+                <span class="scene-orb scene-orb-one"></span>
+                <span class="scene-orb scene-orb-two"></span>
+                <span class="scene-plane"></span>
+            </div>
             <div class="hero-grid">
                 <div class="hero-content">
                     <p class="eyebrow">Stockholm, Sweden / GCP / AWS / Azure</p>
@@ -382,7 +389,25 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
             navToggle.addEventListener('click', () => {
                 const expanded = navToggle.getAttribute('aria-expanded') === 'true';
                 navToggle.setAttribute('aria-expanded', String(!expanded));
+                navToggle.setAttribute('aria-label', expanded ? 'Open navigation' : 'Close navigation');
                 navMenu.classList.toggle('open');
+            });
+
+            navMenu.querySelectorAll('a').forEach(link => {
+                link.addEventListener('click', () => {
+                    navToggle.setAttribute('aria-expanded', 'false');
+                    navToggle.setAttribute('aria-label', 'Open navigation');
+                    navMenu.classList.remove('open');
+                });
+            });
+
+            document.addEventListener('keydown', event => {
+                if (event.key === 'Escape' && navMenu.classList.contains('open')) {
+                    navToggle.setAttribute('aria-expanded', 'false');
+                    navToggle.setAttribute('aria-label', 'Open navigation');
+                    navMenu.classList.remove('open');
+                    navToggle.focus();
+                }
             });
         })();
     </script>
