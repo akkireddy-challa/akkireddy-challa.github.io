@@ -45,6 +45,11 @@ a {
     color: inherit;
 }
 
+:focus-visible {
+    outline: 3px solid var(--warm);
+    outline-offset: 4px;
+}
+
 .skip-link {
     position: absolute;
     left: 16px;
@@ -1037,5 +1042,19 @@ html[data-theme='dark'] .article-navigation a {
     .site-footer {
         flex-direction: column;
         align-items: flex-start;
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    html {
+        scroll-behavior: auto;
+    }
+
+    *,
+    *::before,
+    *::after {
+        transition-duration: 0.01ms !important;
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
     }
 }

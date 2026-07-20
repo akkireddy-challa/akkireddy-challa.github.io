@@ -2,26 +2,46 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://akkireddy-challa.github.io/</loc>
-    <lastmod>2026-06-05</lastmod>
+    <lastmod>2026-07-20</lastmod>
   </url>
   <url>
     <loc>https://akkireddy-challa.github.io/blog.html</loc>
-    <lastmod>2026-06-05</lastmod>
+    <lastmod>2026-07-20</lastmod>
   </url>
   <url>
     <loc>https://akkireddy-challa.github.io/writing/cloud-platform-operating-model.html</loc>
-    <lastmod>2026-06-05</lastmod>
+    <lastmod>2026-07-20</lastmod>
   </url>
   <url>
     <loc>https://akkireddy-challa.github.io/writing/terraform-best-practices.html</loc>
-    <lastmod>2026-06-05</lastmod>
+    <lastmod>2026-07-20</lastmod>
   </url>
   <url>
     <loc>https://akkireddy-challa.github.io/writing/observability-for-platforms.html</loc>
-    <lastmod>2026-06-05</lastmod>
+    <lastmod>2026-07-20</lastmod>
   </url>
   <url>
     <loc>https://akkireddy-challa.github.io/writing/ai-infrastructure-foundations.html</loc>
-    <lastmod>2026-06-05</lastmod>
+    <lastmod>2026-07-20</lastmod>
+  </url>
+  <url>
+    <loc>https://akkireddy-challa.github.io/writing/trending-ai-ops-2026.html</loc>
+    <lastmod>2026-07-20</lastmod>
+  </url>
+  <url>
+    <loc>https://akkireddy-challa.github.io/writing/cloud-cost-optimization-2026.html</loc>
+    <lastmod>2026-07-20</lastmod>
+  </url>
+  <url>
+    <loc>https://akkireddy-challa.github.io/writing/k8s-security-2026.html</loc>
+    <lastmod>2026-07-20</lastmod>
+  </url>
+  <url>
+    <loc>https://akkireddy-challa.github.io/writing/mcp-skills-for-ai.html</loc>
+    <lastmod>2026-07-20</lastmod>
+  </url>
+  <url>
+    <loc>https://akkireddy-challa.github.io/writing/openllm-local-ai-models.html</loc>
+    <lastmod>2026-07-20</lastmod>
   </url>
 </urlset>
