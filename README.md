@@ -1,6 +1,6 @@
 # Akkireddy Challa Portfolio
 
-This repository powers [akkireddy95.github.io](https://akkireddy95.github.io/), the public portfolio and writing hub for Akkireddy Challa.
+This repository powers [akkireddy-challa.github.io](https://akkireddy-challa.github.io/), the public portfolio and writing hub for Akkireddy Challa.
 
 ## Focus
 
@@ -15,6 +15,7 @@ This repository powers [akkireddy95.github.io](https://akkireddy95.github.io/), 
 - `index.html` - portfolio content and metadata
 - `blog.html` - writing index
 - `writing/` - long-form engineering articles
+- `writing/_post-template.html` - copyable starting point for a new article
 - `css/styles.css` - responsive visual design
 - `images/` - resume and visual assets
 - `libs/font-awesome/` - icon font used by footer links
@@ -31,4 +32,4 @@ The site is static and can be opened directly in a browser or served by GitHub P
 
 ## Maintenance
 
-Keep the site lightweight: static HTML, one CSS file, local assets, and no unnecessary build dependencies. Add new writing under `writing/`, link it from `blog.html`, and add the URL to `sitemap.xml`.
+Keep the site lightweight: static HTML, one CSS file, local assets, and no unnecessary build dependencies. To publish a post, copy `writing/_post-template.html`, replace its placeholders, link it from `blog.html`, add it to `feed.xml` and `sitemap.xml`, and update its neighbouring article links.

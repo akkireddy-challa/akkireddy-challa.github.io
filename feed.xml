@@ -2,79 +2,79 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Akkireddy Challa — Writing</title>
-    <link>https://akkireddy95.github.io/blog.html</link>
+    <link>https://akkireddy-challa.github.io/blog.html</link>
     <description>Engineering notes from cloud, DevOps, SRE, and AI platform work.</description>
     <language>en-gb</language>
-    <atom:link href="https://akkireddy95.github.io/feed.xml" rel="self" type="application/rss+xml"/>
+    <atom:link href="https://akkireddy-challa.github.io/feed.xml" rel="self" type="application/rss+xml"/>
 
     <item>
       <title>Build MCP skills for AI assistants</title>
-      <link>https://akkireddy95.github.io/writing/mcp-skills-for-ai.html</link>
-      <guid>https://akkireddy95.github.io/writing/mcp-skills-for-ai.html</guid>
+      <link>https://akkireddy-challa.github.io/writing/mcp-skills-for-ai.html</link>
+      <guid>https://akkireddy-challa.github.io/writing/mcp-skills-for-ai.html</guid>
       <pubDate>Fri, 05 Jun 2026 00:00:00 +0000</pubDate>
       <description>A practical guide to building MCP skills for AI assistants, including design, prompts, and integration.</description>
     </item>
 
     <item>
       <title>Run AI models locally with OpenLLM</title>
-      <link>https://akkireddy95.github.io/writing/openllm-local-ai-models.html</link>
-      <guid>https://akkireddy95.github.io/writing/openllm-local-ai-models.html</guid>
+      <link>https://akkireddy-challa.github.io/writing/openllm-local-ai-models.html</link>
+      <guid>https://akkireddy-challa.github.io/writing/openllm-local-ai-models.html</guid>
       <pubDate>Fri, 05 Jun 2026 00:00:00 +0000</pubDate>
       <description>A practical guide to running AI models locally with OpenLLM and open-source tooling for inference.</description>
     </item>
 
     <item>
       <title>AI Ops trends to watch in 2026</title>
-      <link>https://akkireddy95.github.io/writing/trending-ai-ops-2026.html</link>
-      <guid>https://akkireddy95.github.io/writing/trending-ai-ops-2026.html</guid>
+      <link>https://akkireddy-challa.github.io/writing/trending-ai-ops-2026.html</link>
+      <guid>https://akkireddy-challa.github.io/writing/trending-ai-ops-2026.html</guid>
       <pubDate>Fri, 05 Jun 2026 00:00:00 +0000</pubDate>
       <description>Model reproducibility, observability, governance, and cost-aware model lifecycle management.</description>
     </item>
 
     <item>
       <title>Cloud cost optimization patterns for 2026</title>
-      <link>https://akkireddy95.github.io/writing/cloud-cost-optimization-2026.html</link>
-      <guid>https://akkireddy95.github.io/writing/cloud-cost-optimization-2026.html</guid>
+      <link>https://akkireddy-challa.github.io/writing/cloud-cost-optimization-2026.html</link>
+      <guid>https://akkireddy-challa.github.io/writing/cloud-cost-optimization-2026.html</guid>
       <pubDate>Fri, 05 Jun 2026 00:00:00 +0000</pubDate>
       <description>Autoscaling economics, spot/preemptible strategies, and telemetry-driven rightsizing.</description>
     </item>
 
     <item>
       <title>Kubernetes security priorities for 2026</title>
-      <link>https://akkireddy95.github.io/writing/k8s-security-2026.html</link>
-      <guid>https://akkireddy95.github.io/writing/k8s-security-2026.html</guid>
+      <link>https://akkireddy-challa.github.io/writing/k8s-security-2026.html</link>
+      <guid>https://akkireddy-challa.github.io/writing/k8s-security-2026.html</guid>
       <pubDate>Fri, 05 Jun 2026 00:00:00 +0000</pubDate>
       <description>Supply chain hardening, RBAC least-privilege, and runtime protection approaches.</description>
     </item>
 
     <item>
       <title>Practical infrastructure foundations for AI teams</title>
-      <link>https://akkireddy95.github.io/writing/ai-infrastructure-foundations.html</link>
-      <guid>https://akkireddy95.github.io/writing/ai-infrastructure-foundations.html</guid>
+      <link>https://akkireddy-challa.github.io/writing/ai-infrastructure-foundations.html</link>
+      <guid>https://akkireddy-challa.github.io/writing/ai-infrastructure-foundations.html</guid>
       <pubDate>Fri, 05 Jun 2026 00:00:00 +0000</pubDate>
       <description>Governed environments, scalable compute, artifact paths, cost controls, and deployment foundations.</description>
     </item>
 
     <item>
       <title>Observability foundations for platform teams</title>
-      <link>https://akkireddy95.github.io/writing/observability-for-platforms.html</link>
-      <guid>https://akkireddy95.github.io/writing/observability-for-platforms.html</guid>
+      <link>https://akkireddy-challa.github.io/writing/observability-for-platforms.html</link>
+      <guid>https://akkireddy-challa.github.io/writing/observability-for-platforms.html</guid>
       <pubDate>Wed, 20 May 2026 00:00:00 +0000</pubDate>
       <description>How to move from dashboards to signals, ownership, and reliable incident response.</description>
     </item>
 
     <item>
       <title>Terraform best practices I keep coming back to</title>
-      <link>https://akkireddy95.github.io/writing/terraform-best-practices.html</link>
-      <guid>https://akkireddy95.github.io/writing/terraform-best-practices.html</guid>
+      <link>https://akkireddy-challa.github.io/writing/terraform-best-practices.html</link>
+      <guid>https://akkireddy-challa.github.io/writing/terraform-best-practices.html</guid>
       <pubDate>Mon, 05 May 2026 00:00:00 +0000</pubDate>
       <description>Patterns for state, modules, reviews, naming, and repeatable infrastructure delivery.</description>
     </item>
 
     <item>
       <title>How I think about building a cloud platform operating model</title>
-      <link>https://akkireddy95.github.io/writing/cloud-platform-operating-model.html</link>
-      <guid>https://akkireddy95.github.io/writing/cloud-platform-operating-model.html</guid>
+      <link>https://akkireddy-challa.github.io/writing/cloud-platform-operating-model.html</link>
+      <guid>https://akkireddy-challa.github.io/writing/cloud-platform-operating-model.html</guid>
       <pubDate>Fri, 18 Apr 2026 00:00:00 +0000</pubDate>
       <description>A practical model for reliability, delivery speed, IAM, observability, and cost ownership.</description>
     </item>
