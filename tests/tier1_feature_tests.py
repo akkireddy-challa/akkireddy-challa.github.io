@@ -701,20 +701,20 @@ class Tier1FeatureTests:
             'test_id': 'T1_FEAT_10_03',
             'tier': 1,
             'feature': 'Feature 10: Chapter Descriptions & Count Badges',
-            'name': 'Sum of chapter count badges partitions all 9 engineering articles',
-            'passed': total_counted == 9,
-            'message': f'Chapter count sum: {total_counted} (Target: 9)'
+            'name': 'Sum of chapter count badges partitions all 13 engineering articles',
+            'passed': total_counted == 13,
+            'message': f'Chapter count sum: {total_counted} (Target: 13)'
         })
 
-        # T1_FEAT_10_04: 9 writing cards organized under chapters
+        # T1_FEAT_10_04: 13 writing cards organized under chapters
         cards = self.blog_doc.select('.writing-card')
         tests.append({
             'test_id': 'T1_FEAT_10_04',
             'tier': 1,
             'feature': 'Feature 10: Chapter Descriptions & Count Badges',
-            'name': 'Writing page preserves and categorizes all 9 writing cards',
-            'passed': len(cards) == 9,
-            'message': f'Found {len(cards)} writing cards (Target: 9)'
+            'name': 'Writing page preserves and categorizes all 13 writing cards',
+            'passed': len(cards) == 13,
+            'message': f'Found {len(cards)} writing cards (Target: 13)'
         })
 
         # T1_FEAT_10_05: Semantic heading hierarchy
@@ -757,8 +757,8 @@ class Tier1FeatureTests:
             'tier': 1,
             'feature': 'Feature 11: Elimination of 30-Tag Wall',
             'name': 'Tags scoped cleanly inside individual article cards as compact metadata',
-            'passed': cards_with_tags == 9,
-            'message': f'Cards with scoped metadata tags: {cards_with_tags}/9'
+            'passed': cards_with_tags == 13,
+            'message': f'Cards with scoped metadata tags: {cards_with_tags}/13'
         })
 
         # T1_FEAT_11_03: Class naming uses .card-tag or .tech-tag

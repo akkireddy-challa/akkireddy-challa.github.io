@@ -44,4 +44,20 @@
     <loc>https://akkireddy-challa.github.io/writing/openllm-local-ai-models.html</loc>
     <lastmod>2026-07-20</lastmod>
   </url>
+  <url>
+    <loc>https://akkireddy-challa.github.io/writing/k8s-mcp-diagnostics.html</loc>
+    <lastmod>2026-11-01</lastmod>
+  </url>
+  <url>
+    <loc>https://akkireddy-challa.github.io/writing/nova-agentic-rag-architecture.html</loc>
+    <lastmod>2026-11-01</lastmod>
+  </url>
+  <url>
+    <loc>https://akkireddy-challa.github.io/writing/azure-censys-mcp-security.html</loc>
+    <lastmod>2026-11-01</lastmod>
+  </url>
+  <url>
+    <loc>https://akkireddy-challa.github.io/writing/phoenix-mcp-llm-eval.html</loc>
+    <lastmod>2026-11-01</lastmod>
+  </url>
 </urlset>

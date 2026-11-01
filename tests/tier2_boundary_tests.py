@@ -207,26 +207,26 @@ class Tier2BoundaryTests:
             tags = card_node.get_attr('data-tags', '').lower()
             return q in title_text or q in desc_text or q in tags
 
-        # T2_BND_03_01: Empty search query "" retains all 9 articles
+        # T2_BND_03_01: Empty search query "" retains all 13 articles
         matching_empty = [c for c in cards if simulate_filter("", c)]
         tests.append({
             'test_id': 'T2_BND_03_01',
             'tier': 2,
             'feature': 'Boundary 03: Empty & Edge Search Queries in Blog',
-            'name': 'Empty search query ("") retains all 9 engineering articles',
-            'passed': len(matching_empty) == 9,
-            'message': f'Empty query matched {len(matching_empty)}/9 articles'
+            'name': 'Empty search query ("") retains all 13 engineering articles',
+            'passed': len(matching_empty) == 13,
+            'message': f'Empty query matched {len(matching_empty)}/13 articles'
         })
 
-        # T2_BND_03_02: Whitespace-only search query "   " retains all 9 articles
+        # T2_BND_03_02: Whitespace-only search query "   " retains all 13 articles
         matching_whitespace = [c for c in cards if simulate_filter("   ", c)]
         tests.append({
             'test_id': 'T2_BND_03_02',
             'tier': 2,
             'feature': 'Boundary 03: Empty & Edge Search Queries in Blog',
             'name': 'Whitespace-only search query ("   ") trims cleanly and retains all articles',
-            'passed': len(matching_whitespace) == 9,
-            'message': f'Whitespace query matched {len(matching_whitespace)}/9 articles'
+            'passed': len(matching_whitespace) == 13,
+            'message': f'Whitespace query matched {len(matching_whitespace)}/13 articles'
         })
 
         # T2_BND_03_03: Special regex characters do not crash search

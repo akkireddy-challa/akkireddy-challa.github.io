@@ -8,6 +8,38 @@
     <atom:link href="https://akkireddy-challa.github.io/feed.xml" rel="self" type="application/rss+xml"/>
 
     <item>
+      <title>Autonomous Kubernetes Diagnostics via Read-Only MCP</title>
+      <link>https://akkireddy-challa.github.io/writing/k8s-mcp-diagnostics.html</link>
+      <guid>https://akkireddy-challa.github.io/writing/k8s-mcp-diagnostics.html</guid>
+      <pubDate>Sun, 01 Nov 2026 00:00:00 +0000</pubDate>
+      <description>Architecting a read-only Model Context Protocol server for bounded Kubernetes pod diagnostics, CrashLoopBackOff triage, and cluster event telemetry.</description>
+    </item>
+
+    <item>
+      <title>Architecting Local Agentic RAG with Evaluator-Optimizer Feedback</title>
+      <link>https://akkireddy-challa.github.io/writing/nova-agentic-rag-architecture.html</link>
+      <guid>https://akkireddy-challa.github.io/writing/nova-agentic-rag-architecture.html</guid>
+      <pubDate>Sun, 01 Nov 2026 00:00:00 +0000</pubDate>
+      <description>Designing local agentic RAG pipelines with Evaluator-Optimizer critic loops, vendor-agnostic routing, and zero-fake-data validation guardrails.</description>
+    </item>
+
+    <item>
+      <title>External Attack Surface Discovery with Azure and Censys MCP</title>
+      <link>https://akkireddy-challa.github.io/writing/azure-censys-mcp-security.html</link>
+      <guid>https://akkireddy-challa.github.io/writing/azure-censys-mcp-security.html</guid>
+      <pubDate>Sun, 01 Nov 2026 00:00:00 +0000</pubDate>
+      <description>Automating cloud security posture audits by orchestrating Censys Internet Intelligence and Azure Resource Manager via token-efficient MCP tools.</description>
+    </item>
+
+    <item>
+      <title>Continuous LLM Observability and Quality Gating via MCP</title>
+      <link>https://akkireddy-challa.github.io/writing/phoenix-mcp-llm-eval.html</link>
+      <guid>https://akkireddy-challa.github.io/writing/phoenix-mcp-llm-eval.html</guid>
+      <pubDate>Sun, 01 Nov 2026 00:00:00 +0000</pubDate>
+      <description>Exposing Arize Phoenix LLM tracing, span-level latency debugging, and automated evaluation metrics to AI agents for CI/CD quality gating.</description>
+    </item>
+
+    <item>
       <title>Build MCP skills for AI assistants</title>
       <link>https://akkireddy-challa.github.io/writing/mcp-skills-for-ai.html</link>
       <guid>https://akkireddy-challa.github.io/writing/mcp-skills-for-ai.html</guid>

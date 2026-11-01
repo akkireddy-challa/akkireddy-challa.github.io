@@ -154,9 +154,9 @@ class Tier3InteractionTests:
             'test_id': 'T3_INT_02_03',
             'tier': 3,
             'feature': 'Interaction 02: Search + Chapter Navigation in Writing Page',
-            'name': 'Clearing search input query restores all 9 articles across all chapters',
-            'passed': len(all_articles) == 9,
-            'message': f'Restored all {len(all_articles)}/9 articles upon clearing query'
+            'name': 'Clearing search input query restores all 13 articles across all chapters',
+            'passed': len(all_articles) == 13,
+            'message': f'Restored all {len(all_articles)}/13 articles upon clearing query'
         })
 
         # T3_INT_02_04: In-card tags allow direct topic filtering

@@ -1,7 +1,7 @@
 {
-  "timestamp": "2026-11-01T15:05:30Z",
+  "timestamp": "2026-11-01T16:54:40Z",
   "repo_root": "/Users/akkireddy/Desktop/xplore/akkireddy-challa.github.io",
-  "duration_seconds": 0.219,
+  "duration_seconds": 0.204,
   "summary": {
     "total": 140,
     "passed": 140,
@@ -411,17 +411,17 @@
       "test_id": "T1_FEAT_10_03",
       "tier": 1,
       "feature": "Feature 10: Chapter Descriptions & Count Badges",
-      "name": "Sum of chapter count badges partitions all 9 engineering articles",
+      "name": "Sum of chapter count badges partitions all 13 engineering articles",
       "passed": true,
-      "message": "Chapter count sum: 9 (Target: 9)"
+      "message": "Chapter count sum: 13 (Target: 13)"
     },
     {
       "test_id": "T1_FEAT_10_04",
       "tier": 1,
       "feature": "Feature 10: Chapter Descriptions & Count Badges",
-      "name": "Writing page preserves and categorizes all 9 writing cards",
+      "name": "Writing page preserves and categorizes all 13 writing cards",
       "passed": true,
-      "message": "Found 9 writing cards (Target: 9)"
+      "message": "Found 13 writing cards (Target: 13)"
     },
     {
       "test_id": "T1_FEAT_10_05",
@@ -445,7 +445,7 @@
       "feature": "Feature 11: Elimination of 30-Tag Wall",
       "name": "Tags scoped cleanly inside individual article cards as compact metadata",
       "passed": true,
-      "message": "Cards with scoped metadata tags: 9/9"
+      "message": "Cards with scoped metadata tags: 13/13"
     },
     {
       "test_id": "T1_FEAT_11_03",
@@ -453,7 +453,7 @@
       "feature": "Feature 11: Elimination of 30-Tag Wall",
       "name": "In-card tag elements utilize standardized .card-tag or .tech-tag classes",
       "passed": true,
-      "message": "Found 37 standardized in-card tag elements"
+      "message": "Found 53 standardized in-card tag elements"
     },
     {
       "test_id": "T1_FEAT_11_04",
@@ -755,9 +755,9 @@
       "test_id": "T2_BND_03_01",
       "tier": 2,
       "feature": "Boundary 03: Empty & Edge Search Queries in Blog",
-      "name": "Empty search query (\"\") retains all 9 engineering articles",
+      "name": "Empty search query (\"\") retains all 13 engineering articles",
       "passed": true,
-      "message": "Empty query matched 9/9 articles"
+      "message": "Empty query matched 13/13 articles"
     },
     {
       "test_id": "T2_BND_03_02",
@@ -765,7 +765,7 @@
       "feature": "Boundary 03: Empty & Edge Search Queries in Blog",
       "name": "Whitespace-only search query (\"   \") trims cleanly and retains all articles",
       "passed": true,
-      "message": "Whitespace query matched 9/9 articles"
+      "message": "Whitespace query matched 13/13 articles"
     },
     {
       "test_id": "T2_BND_03_03",
@@ -789,7 +789,7 @@
       "feature": "Boundary 03: Empty & Edge Search Queries in Blog",
       "name": "Search matching is strictly case-insensitive across uppercase, lowercase, and mixed input",
       "passed": true,
-      "message": "Case invariance verified (matched 1 articles across all casing variations)"
+      "message": "Case invariance verified (matched 2 articles across all casing variations)"
     },
     {
       "test_id": "T2_BND_04_01",
@@ -917,7 +917,7 @@
       "feature": "Interaction 02: Search + Chapter Navigation in Writing Page",
       "name": "Filtering articles by search query (\"Kubernetes\") accurately isolates relevant articles",
       "passed": true,
-      "message": "Search for \"Kubernetes\" identified 1 relevant articles"
+      "message": "Search for \"Kubernetes\" identified 2 relevant articles"
     },
     {
       "test_id": "T3_INT_02_02",
@@ -931,9 +931,9 @@
       "test_id": "T3_INT_02_03",
       "tier": 3,
       "feature": "Interaction 02: Search + Chapter Navigation in Writing Page",
-      "name": "Clearing search input query restores all 9 articles across all chapters",
+      "name": "Clearing search input query restores all 13 articles across all chapters",
       "passed": true,
-      "message": "Restored all 9/9 articles upon clearing query"
+      "message": "Restored all 13/13 articles upon clearing query"
     },
     {
       "test_id": "T3_INT_02_04",
@@ -941,7 +941,7 @@
       "feature": "Interaction 02: Search + Chapter Navigation in Writing Page",
       "name": "In-card metadata tags provide direct topic keywords across articles",
       "passed": true,
-      "message": "Found 37 in-card metadata tags"
+      "message": "Found 53 in-card metadata tags"
     },
     {
       "test_id": "T3_INT_02_05",
@@ -949,7 +949,7 @@
       "feature": "Interaction 02: Search + Chapter Navigation in Writing Page",
       "name": "All article card links navigate to valid HTML article files on disk",
       "passed": true,
-      "message": "Verified 9 article links"
+      "message": "Verified 13 article links"
     },
     {
       "test_id": "T3_INT_03_01",
