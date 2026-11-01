@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" fill="none" width="48" height="48">
+  <defs>
+    <style>
+      :root {
+        --logo-text: #0f172a;
+        --logo-accent: #059669;
+      }
+      @media (prefers-color-scheme: dark) {
+        :root {
+          --logo-text: #f8fafc;
+          --logo-accent: #10b981;
+        }
+      }
+      .logo-letter {
+        stroke: var(--text-primary, var(--logo-text));
+        stroke-width: 3.2;
+        stroke-linecap: round;
+        stroke-linejoin: round;
+        fill: none;
+      }
+      .logo-trace {
+        stroke: var(--accent, var(--logo-accent));
+        stroke-width: 2.2;
+        stroke-linecap: round;
+        stroke-linejoin: round;
+        fill: none;
+      }
+      .logo-node {
+        fill: var(--accent, var(--logo-accent));
+      }
+    </style>
+  </defs>
+  <!-- Architectural Letter A -->
+  <path class="logo-letter brand-letter" d="M 7.5 38 L 14 10 L 17.5 10 L 24 38" />
+  <!-- Architectural Letter C -->
+  <path class="logo-letter brand-letter" d="M 41 14 L 37 10 L 31 10 L 27 14 L 27 34 L 31 38 L 37 38 L 41 34" />
+  <!-- Agentic Routing Conduit -->
+  <path class="logo-trace brand-route" d="M 10.5 27 L 20 27 L 24.5 22.5 L 33 22.5" />
+  <!-- Terminal Routing Nodes -->
+  <circle class="logo-node brand-node" cx="10.5" cy="27" r="2.2" />
+  <circle class="logo-node brand-node" cx="33" cy="22.5" r="2.5" />
+</svg>

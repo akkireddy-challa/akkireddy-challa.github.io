@@ -1,0 +1,53 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" fill="none" width="48" height="48">
+  <defs>
+    <style>
+      :root {
+        --fav-bg: #0b0f17;
+        --fav-border: #1e293b;
+        --fav-text: #f8fafc;
+        --fav-accent: #10b981;
+      }
+      @media (prefers-color-scheme: light) {
+        :root {
+          --fav-bg: #ffffff;
+          --fav-border: #cbd5e1;
+          --fav-text: #0f172a;
+          --fav-accent: #047857;
+        }
+      }
+      .fav-bg {
+        fill: var(--fav-bg);
+        stroke: var(--fav-border);
+        stroke-width: 1.5;
+      }
+      .fav-letter {
+        stroke: var(--fav-text);
+        stroke-width: 3.5;
+        stroke-linecap: round;
+        stroke-linejoin: round;
+        fill: none;
+      }
+      .fav-trace {
+        stroke: var(--fav-accent);
+        stroke-width: 2.5;
+        stroke-linecap: round;
+        stroke-linejoin: round;
+        fill: none;
+      }
+      .fav-node {
+        fill: var(--fav-accent);
+      }
+    </style>
+  </defs>
+  <!-- High-contrast squircle canvas for universal tab bar legibility -->
+  <rect class="fav-bg" x="2" y="2" width="44" height="44" rx="10" />
+  <!-- Architectural Letter A -->
+  <path class="fav-letter" d="M 7.5 38 L 14 10 L 17.5 10 L 24 38" />
+  <!-- Architectural Letter C -->
+  <path class="fav-letter" d="M 41 14 L 37 10 L 31 10 L 27 14 L 27 34 L 31 38 L 37 38 L 41 34" />
+  <!-- Agentic Routing Conduit -->
+  <path class="fav-trace" d="M 10.5 27 L 20 27 L 24.5 22.5 L 33 22.5" />
+  <!-- Terminal Routing Nodes -->
+  <circle class="fav-node" cx="10.5" cy="27" r="2.2" />
+  <circle class="fav-node" cx="33" cy="22.5" r="2.5" />
+</svg>

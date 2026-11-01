@@ -1,0 +1,1155 @@
+{
+  "timestamp": "2026-11-01T09:02:06Z",
+  "repo_root": "/Users/akkireddy/Desktop/xplore/akkireddy-challa.github.io",
+  "duration_seconds": 0.174,
+  "summary": {
+    "total": 140,
+    "passed": 140,
+    "failed": 0,
+    "pass_percentage": 100.0
+  },
+  "tier_breakdown": {
+    "tier_1": {
+      "total": 80,
+      "passed": 80,
+      "failed": 0
+    },
+    "tier_2": {
+      "total": 25,
+      "passed": 25,
+      "failed": 0
+    },
+    "tier_3": {
+      "total": 15,
+      "passed": 15,
+      "failed": 0
+    },
+    "tier_4": {
+      "total": 20,
+      "passed": 20,
+      "failed": 0
+    }
+  },
+  "tests": [
+    {
+      "test_id": "T1_FEAT_01_01",
+      "tier": 1,
+      "feature": "Feature 01: Custom Angular AC Monogram Logo",
+      "name": "index.html brand contains custom vector SVG monogram logo",
+      "passed": true,
+      "message": "Custom SVG logo found in index.html header"
+    },
+    {
+      "test_id": "T1_FEAT_01_02",
+      "tier": 1,
+      "feature": "Feature 01: Custom Angular AC Monogram Logo",
+      "name": "blog.html brand contains custom vector SVG monogram logo",
+      "passed": true,
+      "message": "Custom SVG logo found in blog.html header"
+    },
+    {
+      "test_id": "T1_FEAT_01_03",
+      "tier": 1,
+      "feature": "Feature 01: Custom Angular AC Monogram Logo",
+      "name": "Logo SVG features angular vector geometry with viewBox definition",
+      "passed": true,
+      "message": "SVG contains viewBox and geometric vector elements (<path>/<polygon>/<line>)"
+    },
+    {
+      "test_id": "T1_FEAT_01_04",
+      "tier": 1,
+      "feature": "Feature 01: Custom Angular AC Monogram Logo",
+      "name": "Logo vector geometry includes routing conduit / data bus motif",
+      "passed": true,
+      "message": "Routing conduit and node motif verified in logo SVG"
+    },
+    {
+      "test_id": "T1_FEAT_01_05",
+      "tier": 1,
+      "feature": "Feature 01: Custom Angular AC Monogram Logo",
+      "name": "Brand link contains aria-label=\"Akkireddy Challa Home\" and replaces raw AC text",
+      "passed": true,
+      "message": "Brand link has accessible label and non-plain text structure"
+    },
+    {
+      "test_id": "T1_FEAT_02_01",
+      "tier": 1,
+      "feature": "Feature 02: Responsive Theme-Adaptive Logo Styling",
+      "name": "Logo styling leverages currentColor or CSS theme custom properties",
+      "passed": true,
+      "message": "Theme custom properties integrated into logo styling"
+    },
+    {
+      "test_id": "T1_FEAT_02_02",
+      "tier": 1,
+      "feature": "Feature 02: Responsive Theme-Adaptive Logo Styling",
+      "name": "CSS defines explicit dimensions and layout for brand logo",
+      "passed": true,
+      "message": "Brand logo CSS layout rules present"
+    },
+    {
+      "test_id": "T1_FEAT_02_03",
+      "tier": 1,
+      "feature": "Feature 02: Responsive Theme-Adaptive Logo Styling",
+      "name": "Brand logo provides smooth hover / interaction transitions",
+      "passed": true,
+      "message": "Brand hover transition styles defined"
+    },
+    {
+      "test_id": "T1_FEAT_02_04",
+      "tier": 1,
+      "feature": "Feature 02: Responsive Theme-Adaptive Logo Styling",
+      "name": "Dark mode logo contrast ratio >= 4.5:1 against dark page background",
+      "passed": true,
+      "message": "Dark mode contrast ratio: 18.37:1 (Target >= 4.5:1)"
+    },
+    {
+      "test_id": "T1_FEAT_02_05",
+      "tier": 1,
+      "feature": "Feature 02: Responsive Theme-Adaptive Logo Styling",
+      "name": "Light mode logo contrast ratio >= 4.5:1 against light page background",
+      "passed": true,
+      "message": "Light mode contrast ratio: 17.06:1 (Target >= 4.5:1)"
+    },
+    {
+      "test_id": "T1_FEAT_03_01",
+      "tier": 1,
+      "feature": "Feature 03: Modern SVG & PNG Favicon Suite",
+      "name": "Modern vector favicon images/favicon.svg exists in repository",
+      "passed": true,
+      "message": "images/favicon.svg verified on disk"
+    },
+    {
+      "test_id": "T1_FEAT_03_02",
+      "tier": 1,
+      "feature": "Feature 03: Modern SVG & PNG Favicon Suite",
+      "name": "Fallback favicon.ico exists in repository root",
+      "passed": true,
+      "message": "favicon.ico verified on disk"
+    },
+    {
+      "test_id": "T1_FEAT_03_03",
+      "tier": 1,
+      "feature": "Feature 03: Modern SVG & PNG Favicon Suite",
+      "name": "index.html head links to modern SVG favicon",
+      "passed": true,
+      "message": "index.html links to images/favicon.svg"
+    },
+    {
+      "test_id": "T1_FEAT_03_04",
+      "tier": 1,
+      "feature": "Feature 03: Modern SVG & PNG Favicon Suite",
+      "name": "blog.html head links to modern SVG favicon",
+      "passed": true,
+      "message": "blog.html links to images/favicon.svg"
+    },
+    {
+      "test_id": "T1_FEAT_03_05",
+      "tier": 1,
+      "feature": "Feature 03: Modern SVG & PNG Favicon Suite",
+      "name": "images/favicon.svg contains valid vector XML envelope",
+      "passed": true,
+      "message": "SVG validation: Valid SVG"
+    },
+    {
+      "test_id": "T1_FEAT_04_01",
+      "tier": 1,
+      "feature": "Feature 04: Preserve About Section Portrait",
+      "name": "Portrait image file images/akkireddy-avatar.jpg exists on disk",
+      "passed": true,
+      "message": "Portrait file verified on disk"
+    },
+    {
+      "test_id": "T1_FEAT_04_02",
+      "tier": 1,
+      "feature": "Feature 04: Preserve About Section Portrait",
+      "name": "index.html About section includes preserved portrait photo reference",
+      "passed": true,
+      "message": "About section references akkireddy-avatar.jpg"
+    },
+    {
+      "test_id": "T1_FEAT_04_03",
+      "tier": 1,
+      "feature": "Feature 04: Preserve About Section Portrait",
+      "name": "About section portrait has explicit width and height attributes (CLS prevention)",
+      "passed": true,
+      "message": "Explicit image dimensions present"
+    },
+    {
+      "test_id": "T1_FEAT_04_04",
+      "tier": 1,
+      "feature": "Feature 04: Preserve About Section Portrait",
+      "name": "About section portrait contains descriptive alt attribute",
+      "passed": true,
+      "message": "Descriptive alt text present"
+    },
+    {
+      "test_id": "T1_FEAT_04_05",
+      "tier": 1,
+      "feature": "Feature 04: Preserve About Section Portrait",
+      "name": "About section portrait specifies loading=\"lazy\" for performance",
+      "passed": true,
+      "message": "loading=\"lazy\" attribute present"
+    },
+    {
+      "test_id": "T1_FEAT_05_01",
+      "tier": 1,
+      "feature": "Feature 05: Calmer Status Strip",
+      "name": "Five bulky telemetry cards replaced with calm horizontal status strip",
+      "passed": true,
+      "message": "Calm status strip present with reduced card density"
+    },
+    {
+      "test_id": "T1_FEAT_05_02",
+      "tier": 1,
+      "feature": "Feature 05: Calmer Status Strip",
+      "name": "Status strip preserves #stockholm-clock element for live CET time",
+      "passed": true,
+      "message": "Element #stockholm-clock verified"
+    },
+    {
+      "test_id": "T1_FEAT_05_03",
+      "tier": 1,
+      "feature": "Feature 05: Calmer Status Strip",
+      "name": "Status strip displays Stockholm location and hub indicators",
+      "passed": true,
+      "message": "Stockholm location indicators verified"
+    },
+    {
+      "test_id": "T1_FEAT_05_04",
+      "tier": 1,
+      "feature": "Feature 05: Calmer Status Strip",
+      "name": "Status strip preserves essential engineering credentials and highlights",
+      "passed": true,
+      "message": "Essential credentials verified in status strip"
+    },
+    {
+      "test_id": "T1_FEAT_05_05",
+      "tier": 1,
+      "feature": "Feature 05: Calmer Status Strip",
+      "name": "Status strip includes accessible region labeling (aria-label)",
+      "passed": true,
+      "message": "Accessible aria-label verified on status strip"
+    },
+    {
+      "test_id": "T1_FEAT_06_01",
+      "tier": 1,
+      "feature": "Feature 06: Top 3 Projects as Mini Case Studies",
+      "name": "Project 1 (Nova) is structured with Problem, Architecture, and Outcome",
+      "passed": true,
+      "message": "Nova case study structured with Problem, Architecture, Outcome"
+    },
+    {
+      "test_id": "T1_FEAT_06_02",
+      "tier": 1,
+      "feature": "Feature 06: Top 3 Projects as Mini Case Studies",
+      "name": "Project 2 (K8s MCP Server) is structured with Problem, Architecture, and Outcome",
+      "passed": true,
+      "message": "K8s MCP Server structured with Problem, Architecture, Outcome"
+    },
+    {
+      "test_id": "T1_FEAT_06_03",
+      "tier": 1,
+      "feature": "Feature 06: Top 3 Projects as Mini Case Studies",
+      "name": "Project 3 (Azure MCP Platform) is structured with Problem, Architecture, and Outcome",
+      "passed": true,
+      "message": "Azure MCP Platform structured with Problem, Architecture, Outcome"
+    },
+    {
+      "test_id": "T1_FEAT_06_04",
+      "tier": 1,
+      "feature": "Feature 06: Top 3 Projects as Mini Case Studies",
+      "name": "Case study cards contain active GitHub repository links",
+      "passed": true,
+      "message": "Live GitHub links verified on top 3 projects"
+    },
+    {
+      "test_id": "T1_FEAT_06_05",
+      "tier": 1,
+      "feature": "Feature 06: Top 3 Projects as Mini Case Studies",
+      "name": "Case study cards display technology stack badges / tags",
+      "passed": true,
+      "message": "Technology badges verified on all top 3 case studies"
+    },
+    {
+      "test_id": "T1_FEAT_07_01",
+      "tier": 1,
+      "feature": "Feature 07: Interactive MCP Studio Polish",
+      "name": "MCP Studio card displays clear \"INTERACTIVE DEMO\" badge",
+      "passed": true,
+      "message": "INTERACTIVE DEMO badge verified in MCP studio"
+    },
+    {
+      "test_id": "T1_FEAT_07_02",
+      "tier": 1,
+      "feature": "Feature 07: Interactive MCP Studio Polish",
+      "name": "MCP Studio includes user helper subtitle explaining interactivity",
+      "passed": true,
+      "message": "Helper guidance text verified in MCP Studio"
+    },
+    {
+      "test_id": "T1_FEAT_07_03",
+      "tier": 1,
+      "feature": "Feature 07: Interactive MCP Studio Polish",
+      "name": "MCP Studio preserves required interactive IDs for script binding",
+      "passed": true,
+      "message": "All required interactive IDs present"
+    },
+    {
+      "test_id": "T1_FEAT_07_04",
+      "tier": 1,
+      "feature": "Feature 07: Interactive MCP Studio Polish",
+      "name": "MCP Studio contains 4 server tabs (k8s, azure, grafana, phoenix)",
+      "passed": true,
+      "message": "Verified tabs: ['k8s-mcp', 'azure-mcp', 'grafana-mcp', 'phoenix-mcp']"
+    },
+    {
+      "test_id": "T1_FEAT_07_05",
+      "tier": 1,
+      "feature": "Feature 07: Interactive MCP Studio Polish",
+      "name": "Studio action buttons contain vector SVG icons and accessible labels",
+      "passed": true,
+      "message": "Action buttons equipped with vector icons"
+    },
+    {
+      "test_id": "T1_FEAT_08_01",
+      "tier": 1,
+      "feature": "Feature 08: General Layout Density Reduction",
+      "name": "Bento grid specifies relaxed spacing and gap for calm hierarchy",
+      "passed": true,
+      "message": "Bento grid gap defined in CSS"
+    },
+    {
+      "test_id": "T1_FEAT_08_02",
+      "tier": 1,
+      "feature": "Feature 08: General Layout Density Reduction",
+      "name": "Sections enforce consistent top and bottom breathing room",
+      "passed": true,
+      "message": "Section padding rules verified"
+    },
+    {
+      "test_id": "T1_FEAT_08_03",
+      "tier": 1,
+      "feature": "Feature 08: General Layout Density Reduction",
+      "name": "Hero section layout employs clean dual-column grid or flex alignment",
+      "passed": true,
+      "message": "Hero layout rules verified"
+    },
+    {
+      "test_id": "T1_FEAT_08_04",
+      "tier": 1,
+      "feature": "Feature 08: General Layout Density Reduction",
+      "name": "Typography utilizes fluid clamp() sizing to prevent awkward line breaks",
+      "passed": true,
+      "message": "Fluid clamp() typography found in CSS"
+    },
+    {
+      "test_id": "T1_FEAT_08_05",
+      "tier": 1,
+      "feature": "Feature 08: General Layout Density Reduction",
+      "name": "Card treatments use subtle borders and background tokens",
+      "passed": true,
+      "message": "Card border and background rules verified"
+    },
+    {
+      "test_id": "T1_FEAT_09_01",
+      "tier": 1,
+      "feature": "Feature 09: 5 Curated Engineering Chapters on blog.html",
+      "name": "Chapter 1: \"Platform Engineering\" curated section exists",
+      "passed": true,
+      "message": "Platform Engineering chapter verified"
+    },
+    {
+      "test_id": "T1_FEAT_09_02",
+      "tier": 1,
+      "feature": "Feature 09: 5 Curated Engineering Chapters on blog.html",
+      "name": "Chapter 2: \"Cloud & IaC\" curated section exists",
+      "passed": true,
+      "message": "Cloud & IaC chapter verified"
+    },
+    {
+      "test_id": "T1_FEAT_09_03",
+      "tier": 1,
+      "feature": "Feature 09: 5 Curated Engineering Chapters on blog.html",
+      "name": "Chapter 3: \"Reliability & Observability\" curated section exists",
+      "passed": true,
+      "message": "Reliability & Observability chapter verified"
+    },
+    {
+      "test_id": "T1_FEAT_09_04",
+      "tier": 1,
+      "feature": "Feature 09: 5 Curated Engineering Chapters on blog.html",
+      "name": "Chapter 4: \"AI Systems & MCP\" curated section exists",
+      "passed": true,
+      "message": "AI Systems & MCP chapter verified"
+    },
+    {
+      "test_id": "T1_FEAT_09_05",
+      "tier": 1,
+      "feature": "Feature 09: 5 Curated Engineering Chapters on blog.html",
+      "name": "Chapter 5: \"Cost, Security & Governance\" curated section exists",
+      "passed": true,
+      "message": "Cost, Security & Governance chapter verified"
+    },
+    {
+      "test_id": "T1_FEAT_10_01",
+      "tier": 1,
+      "feature": "Feature 10: Chapter Descriptions & Count Badges",
+      "name": "Each chapter provides a concise scope description (.chapter-desc)",
+      "passed": true,
+      "message": "Found 5 chapter descriptions"
+    },
+    {
+      "test_id": "T1_FEAT_10_02",
+      "tier": 1,
+      "feature": "Feature 10: Chapter Descriptions & Count Badges",
+      "name": "Each chapter provides an article count badge (.chapter-count)",
+      "passed": true,
+      "message": "Found 5 chapter count badges"
+    },
+    {
+      "test_id": "T1_FEAT_10_03",
+      "tier": 1,
+      "feature": "Feature 10: Chapter Descriptions & Count Badges",
+      "name": "Sum of chapter count badges partitions all 9 engineering articles",
+      "passed": true,
+      "message": "Chapter count sum: 9 (Target: 9)"
+    },
+    {
+      "test_id": "T1_FEAT_10_04",
+      "tier": 1,
+      "feature": "Feature 10: Chapter Descriptions & Count Badges",
+      "name": "Writing page preserves and categorizes all 9 writing cards",
+      "passed": true,
+      "message": "Found 9 writing cards (Target: 9)"
+    },
+    {
+      "test_id": "T1_FEAT_10_05",
+      "tier": 1,
+      "feature": "Feature 10: Chapter Descriptions & Count Badges",
+      "name": "Chapter headers follow semantic heading hierarchy (.chapter-title)",
+      "passed": true,
+      "message": "Found 5 chapter titles"
+    },
+    {
+      "test_id": "T1_FEAT_11_01",
+      "tier": 1,
+      "feature": "Feature 11: Elimination of 30-Tag Wall",
+      "name": "Bulky top-level 30-tag wall is eliminated from blog.html",
+      "passed": true,
+      "message": "Top-level 30-tag wall removed"
+    },
+    {
+      "test_id": "T1_FEAT_11_02",
+      "tier": 1,
+      "feature": "Feature 11: Elimination of 30-Tag Wall",
+      "name": "Tags scoped cleanly inside individual article cards as compact metadata",
+      "passed": true,
+      "message": "Cards with scoped metadata tags: 9/9"
+    },
+    {
+      "test_id": "T1_FEAT_11_03",
+      "tier": 1,
+      "feature": "Feature 11: Elimination of 30-Tag Wall",
+      "name": "In-card tag elements utilize standardized .card-tag or .tech-tag classes",
+      "passed": true,
+      "message": "Found 37 standardized in-card tag elements"
+    },
+    {
+      "test_id": "T1_FEAT_11_04",
+      "tier": 1,
+      "feature": "Feature 11: Elimination of 30-Tag Wall",
+      "name": "In-card tag font size is compact (<= 0.85rem) to reduce visual clutter",
+      "passed": true,
+      "message": "Compact font size verified in CSS for tags"
+    },
+    {
+      "test_id": "T1_FEAT_11_05",
+      "tier": 1,
+      "feature": "Feature 11: Elimination of 30-Tag Wall",
+      "name": "Outdated tag filter instructions eliminated with tag wall removal",
+      "passed": true,
+      "message": "Outdated tag filter instructions removed"
+    },
+    {
+      "test_id": "T1_FEAT_12_01",
+      "tier": 1,
+      "feature": "Feature 12: Curated Agent Engineering Signals",
+      "name": "\"Agent Engineering Signals\" curated section exists in blog.html",
+      "passed": true,
+      "message": "Agent Engineering Signals section verified"
+    },
+    {
+      "test_id": "T1_FEAT_12_02",
+      "tier": 1,
+      "feature": "Feature 12: Curated Agent Engineering Signals",
+      "name": "Signals section contains takeaway note cards (.signal-card)",
+      "passed": true,
+      "message": "Found 4 signal cards"
+    },
+    {
+      "test_id": "T1_FEAT_12_03",
+      "tier": 1,
+      "feature": "Feature 12: Curated Agent Engineering Signals",
+      "name": "Signals include canonical conference citation for Samuel Colvin (FastMCP/Pydantic)",
+      "passed": true,
+      "message": "Samuel Colvin citation verified"
+    },
+    {
+      "test_id": "T1_FEAT_12_04",
+      "tier": 1,
+      "feature": "Feature 12: Curated Agent Engineering Signals",
+      "name": "Signals include canonical conference citation for Dex Horthy (Tool Latency)",
+      "passed": true,
+      "message": "Dex Horthy citation verified"
+    },
+    {
+      "test_id": "T1_FEAT_12_05",
+      "tier": 1,
+      "feature": "Feature 12: Curated Agent Engineering Signals",
+      "name": "Signals include conference citations for Mahesh Murag or Nir Gazit",
+      "passed": true,
+      "message": "Conference citations verified"
+    },
+    {
+      "test_id": "T1_FEAT_13_01",
+      "tier": 1,
+      "feature": "Feature 13: WCAG AA Light Mode Hero Contrast",
+      "name": "Light-mode accent token satisfies WCAG AA contrast ratio >= 4.5:1 (e.g. #047857)",
+      "passed": true,
+      "message": "Light accent contrast: 5.24:1 with accent=#047857 on bg=#f8fafc (Target >= 4.5:1)"
+    },
+    {
+      "test_id": "T1_FEAT_13_02",
+      "tier": 1,
+      "feature": "Feature 13: WCAG AA Light Mode Hero Contrast",
+      "name": "Light mode .eyebrow text satisfies WCAG AA contrast ratio >= 4.5:1",
+      "passed": true,
+      "message": ".eyebrow contrast verified at 5.24:1"
+    },
+    {
+      "test_id": "T1_FEAT_13_03",
+      "tier": 1,
+      "feature": "Feature 13: WCAG AA Light Mode Hero Contrast",
+      "name": "Light-mode primary text contrast exceeds 7.0:1 (WCAG AAA)",
+      "passed": true,
+      "message": "Primary text contrast: 17.06:1 (Target >= 7.0:1)"
+    },
+    {
+      "test_id": "T1_FEAT_13_04",
+      "tier": 1,
+      "feature": "Feature 13: WCAG AA Light Mode Hero Contrast",
+      "name": "Light-mode secondary text contrast exceeds 4.5:1 (WCAG AA)",
+      "passed": true,
+      "message": "Secondary text contrast: 7.24:1 (Target >= 4.5:1)"
+    },
+    {
+      "test_id": "T1_FEAT_13_05",
+      "tier": 1,
+      "feature": "Feature 13: WCAG AA Light Mode Hero Contrast",
+      "name": "Dark-mode accent contrast exceeds 4.5:1 on dark page background",
+      "passed": true,
+      "message": "Dark accent contrast: 14.03:1 (Target >= 4.5:1)"
+    },
+    {
+      "test_id": "T1_FEAT_14_01",
+      "tier": 1,
+      "feature": "Feature 14: 375px Mobile Viewport Responsiveness",
+      "name": ".hero-bio-badge incorporates responsive containment preventing 375px blowout",
+      "passed": true,
+      "message": "Responsive rules verified on .hero-bio-badge"
+    },
+    {
+      "test_id": "T1_FEAT_14_02",
+      "tier": 1,
+      "feature": "Feature 14: 375px Mobile Viewport Responsiveness",
+      "name": ".status-badge supports wrapping / fluid width to fit 375px screen",
+      "passed": true,
+      "message": "Responsive text wrap verified on .status-badge"
+    },
+    {
+      "test_id": "T1_FEAT_14_03",
+      "tier": 1,
+      "feature": "Feature 14: 375px Mobile Viewport Responsiveness",
+      "name": "Mobile navigation hamburger toggle present on both index.html and blog.html",
+      "passed": true,
+      "message": "Mobile hamburger toggle verified"
+    },
+    {
+      "test_id": "T1_FEAT_14_04",
+      "tier": 1,
+      "feature": "Feature 14: 375px Mobile Viewport Responsiveness",
+      "name": "Header actions (search, theme toggle) remain accessible at mobile viewports",
+      "passed": true,
+      "message": "Header action controls verified"
+    },
+    {
+      "test_id": "T1_FEAT_14_05",
+      "tier": 1,
+      "feature": "Feature 14: 375px Mobile Viewport Responsiveness",
+      "name": "CSS applies box-sizing: border-box and horizontal overflow protection",
+      "passed": true,
+      "message": "Global border-box and overflow protection verified"
+    },
+    {
+      "test_id": "T1_FEAT_15_01",
+      "tier": 1,
+      "feature": "Feature 15: Cross-Page Theme Synchronization",
+      "name": "index.html inline <head> script checks localStorage for saved theme",
+      "passed": true,
+      "message": "FOUC prevention inline script verified in index.html"
+    },
+    {
+      "test_id": "T1_FEAT_15_02",
+      "tier": 1,
+      "feature": "Feature 15: Cross-Page Theme Synchronization",
+      "name": "blog.html inline <head> script checks localStorage for saved theme",
+      "passed": true,
+      "message": "FOUC prevention inline script verified in blog.html"
+    },
+    {
+      "test_id": "T1_FEAT_15_03",
+      "tier": 1,
+      "feature": "Feature 15: Cross-Page Theme Synchronization",
+      "name": "Theme toggle button (#theme-toggle) present on both index.html and blog.html",
+      "passed": true,
+      "message": "Theme toggle button verified on all pages"
+    },
+    {
+      "test_id": "T1_FEAT_15_04",
+      "tier": 1,
+      "feature": "Feature 15: Cross-Page Theme Synchronization",
+      "name": "site-ui.js persists chosen theme to localStorage on toggle",
+      "passed": true,
+      "message": "localStorage persistence logic verified in site-ui.js"
+    },
+    {
+      "test_id": "T1_FEAT_15_05",
+      "tier": 1,
+      "feature": "Feature 15: Cross-Page Theme Synchronization",
+      "name": "site-ui.js synchronizes theme across open browser tabs via storage listener",
+      "passed": true,
+      "message": "Cross-tab storage synchronization verified"
+    },
+    {
+      "test_id": "T1_FEAT_16_01",
+      "tier": 1,
+      "feature": "Feature 16: HTML, CSS, JS Syntax & Link Validation",
+      "name": "js/site-ui.js syntax validates without errors via node -c",
+      "passed": true,
+      "message": "js/site-ui.js compiled cleanly"
+    },
+    {
+      "test_id": "T1_FEAT_16_02",
+      "tier": 1,
+      "feature": "Feature 16: HTML, CSS, JS Syntax & Link Validation",
+      "name": "index.html structure contains valid DOCTYPE, html, head, and body tags",
+      "passed": true,
+      "message": "index.html structure valid"
+    },
+    {
+      "test_id": "T1_FEAT_16_03",
+      "tier": 1,
+      "feature": "Feature 16: HTML, CSS, JS Syntax & Link Validation",
+      "name": "blog.html structure contains valid DOCTYPE, html, head, and body tags",
+      "passed": true,
+      "message": "blog.html structure valid"
+    },
+    {
+      "test_id": "T1_FEAT_16_04",
+      "tier": 1,
+      "feature": "Feature 16: HTML, CSS, JS Syntax & Link Validation",
+      "name": "All local image, stylesheet, and script references in index.html resolve to disk",
+      "passed": true,
+      "message": "All local assets in index.html exist on disk"
+    },
+    {
+      "test_id": "T1_FEAT_16_05",
+      "tier": 1,
+      "feature": "Feature 16: HTML, CSS, JS Syntax & Link Validation",
+      "name": "All local image, stylesheet, and script references in blog.html resolve to disk",
+      "passed": true,
+      "message": "All local assets in blog.html exist on disk"
+    },
+    {
+      "test_id": "T2_BND_01_01",
+      "tier": 2,
+      "feature": "Boundary 01: 375px Mobile Viewport Overflow",
+      "name": "Viewport meta tag configured with standard responsive scaling on all pages",
+      "passed": true,
+      "message": "Standard mobile viewport meta tags verified on both pages"
+    },
+    {
+      "test_id": "T2_BND_01_02",
+      "tier": 2,
+      "feature": "Boundary 01: 375px Mobile Viewport Overflow",
+      "name": "Terminal code outputs implement overflow-x containment to prevent mobile stretching",
+      "passed": true,
+      "message": "Terminal code container overflow handling verified"
+    },
+    {
+      "test_id": "T2_BND_01_03",
+      "tier": 2,
+      "feature": "Boundary 01: 375px Mobile Viewport Overflow",
+      "name": "Bento grid columns reset to single-column (1fr/span 12) on mobile viewports",
+      "passed": true,
+      "message": "Mobile column reset rules verified in CSS"
+    },
+    {
+      "test_id": "T2_BND_01_04",
+      "tier": 2,
+      "feature": "Boundary 01: 375px Mobile Viewport Overflow",
+      "name": "Site header actions bar fits within 375px viewport without fixed min-width overflow",
+      "passed": true,
+      "message": "Nav actions dimensions verified safe for mobile"
+    },
+    {
+      "test_id": "T2_BND_01_05",
+      "tier": 2,
+      "feature": "Boundary 01: 375px Mobile Viewport Overflow",
+      "name": "Global media elements enforce max-width: 100% to prevent rigid pixel blowout",
+      "passed": true,
+      "message": "Global responsive image/media containment verified"
+    },
+    {
+      "test_id": "T2_BND_02_01",
+      "tier": 2,
+      "feature": "Boundary 02: WCAG AA Contrast Calculations",
+      "name": "Light mode primary text contrast ratio >= 7.0:1 (WCAG AAA)",
+      "passed": true,
+      "message": "Light primary contrast: 17.06:1 (Target >= 7.0:1)"
+    },
+    {
+      "test_id": "T2_BND_02_02",
+      "tier": 2,
+      "feature": "Boundary 02: WCAG AA Contrast Calculations",
+      "name": "Light mode secondary text contrast ratio >= 4.5:1 (WCAG AA)",
+      "passed": true,
+      "message": "Light secondary contrast: 7.24:1 (Target >= 4.5:1)"
+    },
+    {
+      "test_id": "T2_BND_02_03",
+      "tier": 2,
+      "feature": "Boundary 02: WCAG AA Contrast Calculations",
+      "name": "Dark mode primary text contrast ratio >= 10.0:1 (WCAG AAA)",
+      "passed": true,
+      "message": "Dark primary contrast: 18.37:1 (Target >= 10.0:1)"
+    },
+    {
+      "test_id": "T2_BND_02_04",
+      "tier": 2,
+      "feature": "Boundary 02: WCAG AA Contrast Calculations",
+      "name": "Dark mode secondary text contrast ratio >= 4.5:1 (WCAG AA)",
+      "passed": true,
+      "message": "Dark secondary contrast: 11.13:1 (Target >= 4.5:1)"
+    },
+    {
+      "test_id": "T2_BND_02_05",
+      "tier": 2,
+      "feature": "Boundary 02: WCAG AA Contrast Calculations",
+      "name": "Light mode accent token contrast ratio >= 4.5:1 for accessible emphasis and links",
+      "passed": true,
+      "message": "Light accent contrast: 5.24:1 with accent=#047857 on bg=#f8fafc (Target >= 4.5:1)"
+    },
+    {
+      "test_id": "T2_BND_03_01",
+      "tier": 2,
+      "feature": "Boundary 03: Empty & Edge Search Queries in Blog",
+      "name": "Empty search query (\"\") retains all 9 engineering articles",
+      "passed": true,
+      "message": "Empty query matched 9/9 articles"
+    },
+    {
+      "test_id": "T2_BND_03_02",
+      "tier": 2,
+      "feature": "Boundary 03: Empty & Edge Search Queries in Blog",
+      "name": "Whitespace-only search query (\"   \") trims cleanly and retains all articles",
+      "passed": true,
+      "message": "Whitespace query matched 9/9 articles"
+    },
+    {
+      "test_id": "T2_BND_03_03",
+      "tier": 2,
+      "feature": "Boundary 03: Empty & Edge Search Queries in Blog",
+      "name": "Special regex metacharacters in query string execute safely without uncaught exceptions",
+      "passed": true,
+      "message": "Regex characters evaluated safely via substring search"
+    },
+    {
+      "test_id": "T2_BND_03_04",
+      "tier": 2,
+      "feature": "Boundary 03: Empty & Edge Search Queries in Blog",
+      "name": "Non-matching search query (\"xyznonexistent999\") cleanly isolates zero articles",
+      "passed": true,
+      "message": "Non-matching query returned 0 articles"
+    },
+    {
+      "test_id": "T2_BND_03_05",
+      "tier": 2,
+      "feature": "Boundary 03: Empty & Edge Search Queries in Blog",
+      "name": "Search matching is strictly case-insensitive across uppercase, lowercase, and mixed input",
+      "passed": true,
+      "message": "Case invariance verified (matched 1 articles across all casing variations)"
+    },
+    {
+      "test_id": "T2_BND_04_01",
+      "tier": 2,
+      "feature": "Boundary 04: Missing & Corrupt URL Query Parameters",
+      "name": "Page script initializes safely with no query parameters present",
+      "passed": true,
+      "message": "URL parameter initialization logic verified"
+    },
+    {
+      "test_id": "T2_BND_04_02",
+      "tier": 2,
+      "feature": "Boundary 04: Missing & Corrupt URL Query Parameters",
+      "name": "URL parameter decoding handles malformed URI strings safely without script halting",
+      "passed": true,
+      "message": "Standard URLSearchParams / decodeURIComponent logic present"
+    },
+    {
+      "test_id": "T2_BND_04_03",
+      "tier": 2,
+      "feature": "Boundary 04: Missing & Corrupt URL Query Parameters",
+      "name": "Unknown tag query parameter (?tag=unknown) evaluates safely to zero matched cards",
+      "passed": true,
+      "message": "Unknown tag matches 0 cards safely"
+    },
+    {
+      "test_id": "T2_BND_04_04",
+      "tier": 2,
+      "feature": "Boundary 04: Missing & Corrupt URL Query Parameters",
+      "name": "Multi-tag query parameters (comma-separated) parse into clean token lists",
+      "passed": true,
+      "message": "Parsed multi-tags: ['kubernetes', 'terraform']"
+    },
+    {
+      "test_id": "T2_BND_04_05",
+      "tier": 2,
+      "feature": "Boundary 04: Missing & Corrupt URL Query Parameters",
+      "name": "Empty query parameters (?tag=&q=) resolve to empty strings without crashing",
+      "passed": true,
+      "message": "Empty parameters safely treated as null/empty"
+    },
+    {
+      "test_id": "T2_BND_05_01",
+      "tier": 2,
+      "feature": "Boundary 05: LocalStorage Persistence & Theme Fallbacks",
+      "name": "Inline <head> localStorage reads are wrapped in try/catch for private browsing security",
+      "passed": true,
+      "message": "try/catch wrapping verified in <head> of both pages"
+    },
+    {
+      "test_id": "T2_BND_05_02",
+      "tier": 2,
+      "feature": "Boundary 05: LocalStorage Persistence & Theme Fallbacks",
+      "name": "Unrecognized theme values (e.g. \"neon\", \"\") rejected in favor of system preference",
+      "passed": true,
+      "message": "Strict theme whitelist check verified"
+    },
+    {
+      "test_id": "T2_BND_05_03",
+      "tier": 2,
+      "feature": "Boundary 05: LocalStorage Persistence & Theme Fallbacks",
+      "name": "Theme toggle strictly inverts current state between \"dark\" and \"light\"",
+      "passed": true,
+      "message": "Theme inversion logic verified in site-ui.js"
+    },
+    {
+      "test_id": "T2_BND_05_04",
+      "tier": 2,
+      "feature": "Boundary 05: LocalStorage Persistence & Theme Fallbacks",
+      "name": "Initial visit without saved theme respects OS prefers-color-scheme media query",
+      "passed": true,
+      "message": "prefers-color-scheme media query evaluation verified"
+    },
+    {
+      "test_id": "T2_BND_05_05",
+      "tier": 2,
+      "feature": "Boundary 05: LocalStorage Persistence & Theme Fallbacks",
+      "name": "meta[name=\"color-scheme\"] content is updated synchronously to eliminate FOUC",
+      "passed": true,
+      "message": "color-scheme meta synchronization verified"
+    },
+    {
+      "test_id": "T3_INT_01_01",
+      "tier": 3,
+      "feature": "Interaction 01: Theme Toggle across Pages & Mobile Viewport",
+      "name": "Theme persisted on index.html is applied synchronously on blog.html prior to DOM render",
+      "passed": true,
+      "message": "Cross-page synchronized FOUC prevention scripts verified"
+    },
+    {
+      "test_id": "T3_INT_01_02",
+      "tier": 3,
+      "feature": "Interaction 01: Theme Toggle across Pages & Mobile Viewport",
+      "name": "Light and dark theme token matrices maintain 100% semantic variable parity",
+      "passed": true,
+      "message": "Semantic token parity verified across both themes"
+    },
+    {
+      "test_id": "T3_INT_01_03",
+      "tier": 3,
+      "feature": "Interaction 01: Theme Toggle across Pages & Mobile Viewport",
+      "name": "Monogram logo vector elements use theme variables without hardcoded color clashes",
+      "passed": true,
+      "message": "Logo styles avoid conflicting hardcoded colors"
+    },
+    {
+      "test_id": "T3_INT_01_04",
+      "tier": 3,
+      "feature": "Interaction 01: Theme Toggle across Pages & Mobile Viewport",
+      "name": "Mobile navigation menu drawer utilizes theme tokens for light/dark legibility",
+      "passed": true,
+      "message": "Theme token background verified on .nav-menu"
+    },
+    {
+      "test_id": "T3_INT_01_05",
+      "tier": 3,
+      "feature": "Interaction 01: Theme Toggle across Pages & Mobile Viewport",
+      "name": "Status strip component utilizes theme custom properties for contrast consistency",
+      "passed": true,
+      "message": "Status strip theme variables verified"
+    },
+    {
+      "test_id": "T3_INT_02_01",
+      "tier": 3,
+      "feature": "Interaction 02: Search + Chapter Navigation in Writing Page",
+      "name": "Filtering articles by search query (\"Kubernetes\") accurately isolates relevant articles",
+      "passed": true,
+      "message": "Search for \"Kubernetes\" identified 1 relevant articles"
+    },
+    {
+      "test_id": "T3_INT_02_02",
+      "tier": 3,
+      "feature": "Interaction 02: Search + Chapter Navigation in Writing Page",
+      "name": "Curated chapter containers (.writing-chapter) partition articles for isolated browsing",
+      "passed": true,
+      "message": "Found 5 chapter containers"
+    },
+    {
+      "test_id": "T3_INT_02_03",
+      "tier": 3,
+      "feature": "Interaction 02: Search + Chapter Navigation in Writing Page",
+      "name": "Clearing search input query restores all 9 articles across all chapters",
+      "passed": true,
+      "message": "Restored all 9/9 articles upon clearing query"
+    },
+    {
+      "test_id": "T3_INT_02_04",
+      "tier": 3,
+      "feature": "Interaction 02: Search + Chapter Navigation in Writing Page",
+      "name": "In-card metadata tags provide direct topic keywords across articles",
+      "passed": true,
+      "message": "Found 37 in-card metadata tags"
+    },
+    {
+      "test_id": "T3_INT_02_05",
+      "tier": 3,
+      "feature": "Interaction 02: Search + Chapter Navigation in Writing Page",
+      "name": "All article card links navigate to valid HTML article files on disk",
+      "passed": true,
+      "message": "Verified 9 article links"
+    },
+    {
+      "test_id": "T3_INT_03_01",
+      "tier": 3,
+      "feature": "Interaction 03: MCP Demo Studio Tab Switching & Simulated Run",
+      "name": "MCP data state dictionary includes all 4 servers with complete configuration payloads",
+      "passed": true,
+      "message": "mcpData contains k8s-mcp, azure-mcp, grafana-mcp, phoenix-mcp"
+    },
+    {
+      "test_id": "T3_INT_03_02",
+      "tier": 3,
+      "feature": "Interaction 03: MCP Demo Studio Tab Switching & Simulated Run",
+      "name": "Switching to azure-mcp updates terminal command text and AI Foundry diagnostic trace",
+      "passed": true,
+      "message": "Azure MCP command payload verified"
+    },
+    {
+      "test_id": "T3_INT_03_03",
+      "tier": 3,
+      "feature": "Interaction 03: MCP Demo Studio Tab Switching & Simulated Run",
+      "name": "Switching to grafana-mcp dynamically updates external repository link",
+      "passed": true,
+      "message": "Grafana repository link verified"
+    },
+    {
+      "test_id": "T3_INT_03_04",
+      "tier": 3,
+      "feature": "Interaction 03: MCP Demo Studio Tab Switching & Simulated Run",
+      "name": "Clicking #btn-run-tool activates live execution animation (is-running) and feedback",
+      "passed": true,
+      "message": "Run tool event listener and execution animation verified"
+    },
+    {
+      "test_id": "T3_INT_03_05",
+      "tier": 3,
+      "feature": "Interaction 03: MCP Demo Studio Tab Switching & Simulated Run",
+      "name": "Clicking #btn-copy-config copies MCP server JSON snippet and triggers user toast notification",
+      "passed": true,
+      "message": "Copy config clipboard action and toast notification verified"
+    },
+    {
+      "test_id": "T4_SCN_01_01",
+      "tier": 4,
+      "feature": "Scenario 01: Recruiter / Engineering Leader Journey",
+      "name": "Step 1: Recruiter lands on portfolio and encounters custom monogram branding",
+      "passed": true,
+      "message": "Custom monogram branding verified"
+    },
+    {
+      "test_id": "T4_SCN_01_02",
+      "tier": 4,
+      "feature": "Scenario 01: Recruiter / Engineering Leader Journey",
+      "name": "Step 2: Recruiter inspects calmed status strip with Stockholm live clock and credentials",
+      "passed": true,
+      "message": "Status strip with Stockholm clock verified"
+    },
+    {
+      "test_id": "T4_SCN_01_03",
+      "tier": 4,
+      "feature": "Scenario 01: Recruiter / Engineering Leader Journey",
+      "name": "Step 3: Recruiter reviews 3 structured case studies (Problem, Architecture, Outcome)",
+      "passed": true,
+      "message": "Found 3/3 structured case studies"
+    },
+    {
+      "test_id": "T4_SCN_01_04",
+      "tier": 4,
+      "feature": "Scenario 01: Recruiter / Engineering Leader Journey",
+      "name": "Step 4: Recruiter inspects About section portrait and Swedish academic CS credentials",
+      "passed": true,
+      "message": "Academic credentials and portrait verified"
+    },
+    {
+      "test_id": "T4_SCN_01_05",
+      "tier": 4,
+      "feature": "Scenario 01: Recruiter / Engineering Leader Journey",
+      "name": "Step 5: Recruiter triggers Resume (PDF) download and accesses non-empty PDF document",
+      "passed": true,
+      "message": "Resume PDF verified (301061 bytes)"
+    },
+    {
+      "test_id": "T4_SCN_02_01",
+      "tier": 4,
+      "feature": "Scenario 02: AI Systems Architect Interactive Playground Journey",
+      "name": "Step 1: AI Architect locates MCP Studio with visible \"INTERACTIVE DEMO\" badge",
+      "passed": true,
+      "message": "Interactive demo labeling verified"
+    },
+    {
+      "test_id": "T4_SCN_02_02",
+      "tier": 4,
+      "feature": "Scenario 02: AI Systems Architect Interactive Playground Journey",
+      "name": "Step 2: AI Architect tests MCP server tabs (k8s, azure, grafana, phoenix)",
+      "passed": true,
+      "message": "Found 4 MCP server tabs"
+    },
+    {
+      "test_id": "T4_SCN_02_03",
+      "tier": 4,
+      "feature": "Scenario 02: AI Systems Architect Interactive Playground Journey",
+      "name": "Step 3: AI Architect executes simulated tool run via #btn-run-tool",
+      "passed": true,
+      "message": "Run tool button and terminal output elements verified"
+    },
+    {
+      "test_id": "T4_SCN_02_04",
+      "tier": 4,
+      "feature": "Scenario 02: AI Systems Architect Interactive Playground Journey",
+      "name": "Step 4: AI Architect copies agent server JSON config via #btn-copy-config",
+      "passed": true,
+      "message": "Copy config button and configuration snippets verified"
+    },
+    {
+      "test_id": "T4_SCN_02_05",
+      "tier": 4,
+      "feature": "Scenario 02: AI Systems Architect Interactive Playground Journey",
+      "name": "Step 5: AI Architect navigates to open-source MCP repository link",
+      "passed": true,
+      "message": "Repository link (#mcp-repo-link) verified"
+    },
+    {
+      "test_id": "T4_SCN_03_01",
+      "tier": 4,
+      "feature": "Scenario 03: Platform Engineer Knowledge Discovery Journey",
+      "name": "Step 1: Platform Engineer lands on writing page with dedicated hero",
+      "passed": true,
+      "message": "Writing hero section verified"
+    },
+    {
+      "test_id": "T4_SCN_03_02",
+      "tier": 4,
+      "feature": "Scenario 03: Platform Engineer Knowledge Discovery Journey",
+      "name": "Step 2: Platform Engineer navigates through 5 curated engineering chapters",
+      "passed": true,
+      "message": "Found 5 chapter sections"
+    },
+    {
+      "test_id": "T4_SCN_03_03",
+      "tier": 4,
+      "feature": "Scenario 03: Platform Engineer Knowledge Discovery Journey",
+      "name": "Step 3: Platform Engineer browses cards without distracting 30-tag wall",
+      "passed": true,
+      "message": "30-tag wall eliminated"
+    },
+    {
+      "test_id": "T4_SCN_03_04",
+      "tier": 4,
+      "feature": "Scenario 03: Platform Engineer Knowledge Discovery Journey",
+      "name": "Step 4: Platform Engineer studies Curated Agent Engineering Signals with conference citations",
+      "passed": true,
+      "message": "Signals section verified"
+    },
+    {
+      "test_id": "T4_SCN_03_05",
+      "tier": 4,
+      "feature": "Scenario 03: Platform Engineer Knowledge Discovery Journey",
+      "name": "Step 5: Platform Engineer reads comfortably in light mode with WCAG AA compliant text contrast",
+      "passed": true,
+      "message": "Light mode contrast ratio: 5.24:1 (Target >= 4.5:1)"
+    },
+    {
+      "test_id": "T4_SCN_04_01",
+      "tier": 4,
+      "feature": "Scenario 04: Mobile User End-to-End Cross-Site Experience",
+      "name": "Step 1: Mobile user loads portfolio at 375px width with zero horizontal page blowout",
+      "passed": true,
+      "message": "Global overflow containment verified"
+    },
+    {
+      "test_id": "T4_SCN_04_02",
+      "tier": 4,
+      "feature": "Scenario 04: Mobile User End-to-End Cross-Site Experience",
+      "name": "Step 2: Mobile user opens hamburger navigation drawer and accesses site navigation links",
+      "passed": true,
+      "message": "Mobile hamburger toggle and drawer script verified"
+    },
+    {
+      "test_id": "T4_SCN_04_03",
+      "tier": 4,
+      "feature": "Scenario 04: Mobile User End-to-End Cross-Site Experience",
+      "name": "Step 3: Mobile user taps theme toggle button to switch color modes",
+      "passed": true,
+      "message": "Mobile theme toggle button verified"
+    },
+    {
+      "test_id": "T4_SCN_04_04",
+      "tier": 4,
+      "feature": "Scenario 04: Mobile User End-to-End Cross-Site Experience",
+      "name": "Step 4: Mobile user navigates to Writing page with seamless theme persistence",
+      "passed": true,
+      "message": "Cross-page theme persistence verified in blog.html"
+    },
+    {
+      "test_id": "T4_SCN_04_05",
+      "tier": 4,
+      "feature": "Scenario 04: Mobile User End-to-End Cross-Site Experience",
+      "name": "Step 5: Mobile user utilizes #write-search input to filter engineering articles smoothly",
+      "passed": true,
+      "message": "Writing search input #write-search verified"
+    }
+  ]
+}

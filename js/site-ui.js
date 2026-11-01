@@ -228,6 +228,10 @@ Verdict: Ready for production agent deployment.`,
     };
 
     let activeMcpKey = 'k8s-mcp';
+    let runToolTimer = null;
+    let copyConfigTimer = null;
+    let originalRunHTML = null;
+    let originalCopyHTML = null;
 
     const mcpTabs = document.querySelectorAll('.mcp-tab');
     const terminalCmdText = document.getElementById('terminal-cmd-text');
@@ -240,6 +244,27 @@ Verdict: Ready for production agent deployment.`,
         activeMcpKey = key;
         const data = mcpData[key];
         if (!data) return;
+
+        // Reset running state if user switches tabs during execution
+        if (runToolTimer) {
+            clearTimeout(runToolTimer);
+            runToolTimer = null;
+        }
+        if (btnRunTool) {
+            btnRunTool.disabled = false;
+            btnRunTool.classList.remove('is-running');
+            if (originalRunHTML) btnRunTool.innerHTML = originalRunHTML;
+        }
+
+        // Reset copy button feedback if active
+        if (copyConfigTimer) {
+            clearTimeout(copyConfigTimer);
+            copyConfigTimer = null;
+        }
+        if (btnCopyConfig && originalCopyHTML) {
+            btnCopyConfig.classList.remove('is-copied');
+            btnCopyConfig.innerHTML = originalCopyHTML;
+        }
 
         mcpTabs.forEach(tab => {
             const isActive = tab.dataset.mcp === key;
@@ -282,26 +307,46 @@ Verdict: Ready for production agent deployment.`,
 
     btnRunTool?.addEventListener('click', () => {
         const data = mcpData[activeMcpKey];
-        if (!data || !terminalOutput) return;
+        if (!data || !terminalOutput || btnRunTool.disabled) return;
+
+        if (!originalRunHTML) originalRunHTML = btnRunTool.innerHTML;
+        if (runToolTimer) clearTimeout(runToolTimer);
 
         terminalOutput.textContent = '⏳ Executing agent tool in isolated sandbox...';
         terminalOutput.classList.add('is-running');
         btnRunTool.disabled = true;
+        btnRunTool.classList.add('is-running');
+        btnRunTool.innerHTML = `<svg class="action-spinner" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><circle cx="12" cy="12" r="10" stroke="currentColor" stroke-opacity="0.25"></circle><path d="M12 2a10 10 0 0 1 10 10" stroke="currentColor"></path></svg><span>Running...</span>`;
 
-        setTimeout(() => {
+        runToolTimer = setTimeout(() => {
             terminalOutput.textContent = data.output;
             terminalOutput.classList.remove('is-running');
             terminalOutput.parentElement.scrollTop = 0;
+            if (originalRunHTML) btnRunTool.innerHTML = originalRunHTML;
+            btnRunTool.classList.remove('is-running');
             btnRunTool.disabled = false;
+            runToolTimer = null;
             showToast(`✓ Tool executed successfully`);
-        }, 350);
+        }, 600);
     });
 
     btnCopyConfig?.addEventListener('click', () => {
         const data = mcpData[activeMcpKey];
         if (!data) return;
 
+        if (!originalCopyHTML) originalCopyHTML = btnCopyConfig.innerHTML;
+
         navigator.clipboard.writeText(data.configSnippet).then(() => {
+            btnCopyConfig.classList.add('is-copied');
+            btnCopyConfig.innerHTML = `<svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><polyline points="20 6 9 17 4 12"></polyline></svg><span>Copied!</span>`;
+
+            if (copyConfigTimer) clearTimeout(copyConfigTimer);
+            copyConfigTimer = setTimeout(() => {
+                btnCopyConfig.classList.remove('is-copied');
+                if (originalCopyHTML) btnCopyConfig.innerHTML = originalCopyHTML;
+                copyConfigTimer = null;
+            }, 1800);
+
             showToast(`MCP config for ${data.title} copied!`);
         }).catch(() => {
             showToast('Unable to copy to clipboard');

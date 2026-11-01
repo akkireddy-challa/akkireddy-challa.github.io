@@ -46,8 +46,10 @@
         content="Practical field notes for cloud platforms, DevOps, SRE, and AI infrastructure.">
     <meta name="twitter:image" content="https://akkireddy-challa.github.io/images/cloud-platform-social.png">
     <title>Writing | Akkireddy Challa</title>
-    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
-    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <!-- Favicon Suite: Modern SVG (Theme-Adaptive & Retina) with Fallbacks -->
+    <link rel="icon" type="image/svg+xml" href="images/favicon.svg">
+    <link rel="alternate icon" href="favicon.ico" type="image/x-icon">
+    <link rel="apple-touch-icon" sizes="180x180" href="images/apple-touch-icon.png">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="stylesheet" href="libs/font-awesome/css/font-awesome.min.css">
@@ -76,7 +78,19 @@
     <!-- Floating Island Site Header -->
     <header class="site-header">
         <div class="brand-wrapper">
-            <a class="brand" href="index.html" aria-label="Akkireddy Challa Home">AC</a>
+            <a class="brand" href="index.html" aria-label="Akkireddy Challa Home">
+                <svg class="brand-logo" width="28" height="28" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false">
+                    <!-- Architectural Letter A -->
+                    <path class="brand-letter" d="M 7.5 38 L 14 10 L 17.5 10 L 24 38" />
+                    <!-- Architectural Letter C -->
+                    <path class="brand-letter" d="M 41 14 L 37 10 L 31 10 L 27 14 L 27 34 L 31 38 L 37 38 L 41 34" />
+                    <!-- Agentic Routing Conduit -->
+                    <path class="brand-route" d="M 10.5 27 L 20 27 L 24.5 22.5 L 33 22.5" />
+                    <!-- Terminal Routing Nodes -->
+                    <circle class="brand-node" cx="10.5" cy="27" r="2.2" />
+                    <circle class="brand-node" cx="33" cy="22.5" r="2.5" />
+                </svg>
+            </a>
             <div class="brand-meta">
                 <span class="brand-name">Akkireddy Challa</span>
                 <span class="brand-tag"><span class="pulse-dot"></span> Stockholm • eu-north-1</span>
@@ -133,185 +147,303 @@
 
         <section class="section writing-section page-section">
             <div class="writing-search">
-                <label for="write-search" class="search-label">Search writing</label>
-                <input id="write-search" class="search-input" type="search"
-                    placeholder="Search articles, topics, or tags" aria-label="Search writing articles">
+                <label for="write-search" class="visually-hidden">Search writing</label>
+                <div class="search-input-wrapper">
+                    <svg class="search-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                        <circle cx="11" cy="11" r="8"></circle>
+                        <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+                    </svg>
+                    <input id="write-search" class="search-input" type="search"
+                        placeholder="Search articles by title, topic, or tags..." aria-label="Search writing articles" autocomplete="off">
+                    <button type="button" id="clear-filters" class="clear-filters" aria-label="Clear search input">Clear</button>
+                </div>
                 <div class="search-meta">
                     <p class="result-count" aria-live="polite">Showing 9 articles</p>
                 </div>
-                <p class="tag-filter-help">Type a topic or click a tag to filter the writing list.</p>
-                <div class="tag-filters" aria-label="Tag filters" role="group">
-                    <button type="button" class="tag-pill" data-tag="platform engineering"
-                        aria-pressed="false">Platform</button>
-                    <button type="button" class="tag-pill" data-tag="terraform" aria-pressed="false">Terraform</button>
-                    <button type="button" class="tag-pill" data-tag="observability"
-                        aria-pressed="false">Observability</button>
-                    <button type="button" class="tag-pill" data-tag="ai infrastructure" aria-pressed="false">AI</button>
-                    <button type="button" class="tag-pill" data-tag="ai ops" aria-pressed="false">AI Ops</button>
-                    <button type="button" class="tag-pill" data-tag="finops" aria-pressed="false">FinOps</button>
-                    <button type="button" class="tag-pill" data-tag="kubernetes"
-                        aria-pressed="false">Kubernetes</button>
-                    <button type="button" class="tag-pill" data-tag="security" aria-pressed="false">Security</button>
-                    <button type="button" class="tag-pill" data-tag="governance"
-                        aria-pressed="false">Governance</button>
-                    <button type="button" class="tag-pill" data-tag="mlops" aria-pressed="false">MLOps</button>
-                    <button type="button" class="tag-pill" data-tag="mcp" aria-pressed="false">MCP</button>
-                    <button type="button" class="tag-pill" data-tag="prompt engineering"
-                        aria-pressed="false">Prompt</button>
-                    <button type="button" class="tag-pill" data-tag="open source" aria-pressed="false">Open
-                        source</button>
-                    <button type="button" class="tag-pill" data-tag="local ai" aria-pressed="false">Local AI</button>
-                    <button type="button" class="tag-pill" data-tag="openllm" aria-pressed="false">OpenLLM</button>
-                    <button type="button" class="tag-pill" data-tag="ai models" aria-pressed="false">AI models</button>
-                    <button type="button" class="tag-pill" data-tag="infrastructure"
-                        aria-pressed="false">Infrastructure</button>
-                    <button type="button" class="tag-pill" data-tag="compute" aria-pressed="false">Compute</button>
-                    <button type="button" class="tag-pill" data-tag="cost" aria-pressed="false">Cost</button>
-                    <button type="button" class="tag-pill" data-tag="autoscaling"
-                        aria-pressed="false">Autoscaling</button>
-                    <button type="button" class="tag-pill" data-tag="developer productivity"
-                        aria-pressed="false">Developer productivity</button>
-                    <button type="button" class="tag-pill" data-tag="devops" aria-pressed="false">DevOps</button>
-                    <button type="button" class="tag-pill" data-tag="iam" aria-pressed="false">IAM</button>
-                    <button type="button" class="tag-pill" data-tag="inference" aria-pressed="false">Inference</button>
-                    <button type="button" class="tag-pill" data-tag="policy" aria-pressed="false">Policy</button>
-                    <button type="button" class="tag-pill" data-tag="runtime protection" aria-pressed="false">Runtime
-                        protection</button>
-                    <button type="button" class="tag-pill" data-tag="monitoring"
-                        aria-pressed="false">Monitoring</button>
-                    <button type="button" class="tag-pill" data-tag="sre" aria-pressed="false">SRE</button>
-                    <button type="button" class="tag-pill" data-tag="telemetry" aria-pressed="false">Telemetry</button>
-                    <button type="button" class="tag-pill" data-tag="best practices" aria-pressed="false">Best
-                        practices</button>
-                </div>
-                <button type="button" id="clear-filters" class="clear-filters"
-                    aria-label="Clear selected tags and search">Clear filters</button>
             </div>
-            <div class="writing-grid">
-                <article class="writing-card" data-tags="platform engineering,observability,cost,iam">
-                    <span>Platform engineering</span>
-                    <h3>How I think about building a cloud platform operating model</h3>
-                    <p>A practical model for reliability, delivery speed, IAM, observability, and cost ownership.</p>
-                    <p class="card-meta"><time datetime="2026-04-18">18 Apr 2026</time><span aria-hidden="true">·</span> 2 min read</p>
-                    <div class="card-tags">
-                        <span class="card-tag">Platform engineering</span>
-                        <span class="card-tag">Observability</span>
-                        <span class="card-tag">Cost</span>
-                        <span class="card-tag">IAM</span>
+            <div class="writing-chapters">
+                <!-- Chapter 1: Platform Engineering -->
+                <section class="writing-chapter" id="chapter-platform-engineering">
+                    <header class="chapter-header">
+                        <div class="chapter-heading-row">
+                            <h2 class="chapter-title">Platform Engineering</h2>
+                            <span class="chapter-count">1 Article</span>
+                        </div>
+                        <p class="chapter-desc">Operating models, internal developer platforms, and foundational architecture for repeatable, self-service cloud delivery.</p>
+                    </header>
+                    <div class="writing-grid">
+                        <article class="writing-card" data-tags="platform engineering,observability,cost,iam">
+                            <span>Platform engineering</span>
+                            <h3>How I think about building a cloud platform operating model</h3>
+                            <p>A practical model for reliability, delivery speed, IAM, observability, and cost ownership.</p>
+                            <p class="card-meta"><time datetime="2026-04-18">18 Apr 2026</time><span aria-hidden="true">·</span> 2 min read</p>
+                            <div class="card-tags">
+                                <span class="card-tag">Platform engineering</span>
+                                <span class="card-tag">Observability</span>
+                                <span class="card-tag">Cost</span>
+                                <span class="card-tag">IAM</span>
+                            </div>
+                            <a href="writing/cloud-platform-operating-model.html">Read article</a>
+                        </article>
                     </div>
-                    <a href="writing/cloud-platform-operating-model.html">Read article</a>
-                </article>
-                <article class="writing-card" data-tags="terraform,infrastructure,devops,best practices">
-                    <span>Terraform</span>
-                    <h3>Terraform best practices I keep coming back to</h3>
-                    <p>Patterns for state, modules, reviews, naming, and repeatable infrastructure delivery.</p>
-                    <p class="card-meta"><time datetime="2026-05-05">5 May 2026</time><span aria-hidden="true">·</span> 2 min read</p>
-                    <div class="card-tags">
-                        <span class="card-tag">Terraform</span>
-                        <span class="card-tag">Infrastructure</span>
-                        <span class="card-tag">DevOps</span>
-                        <span class="card-tag">Best practices</span>
+                </section>
+
+                <!-- Chapter 2: Cloud & IaC -->
+                <section class="writing-chapter" id="chapter-cloud-iac">
+                    <header class="chapter-header">
+                        <div class="chapter-heading-row">
+                            <h2 class="chapter-title">Cloud &amp; IaC</h2>
+                            <span class="chapter-count">1 Article</span>
+                        </div>
+                        <p class="chapter-desc">Infrastructure as code best practices, Terraform modular state patterns, and production multi-cloud automation.</p>
+                    </header>
+                    <div class="writing-grid">
+                        <article class="writing-card" data-tags="terraform,infrastructure,devops,best practices">
+                            <span>Terraform</span>
+                            <h3>Terraform best practices I keep coming back to</h3>
+                            <p>Patterns for state, modules, reviews, naming, and repeatable infrastructure delivery.</p>
+                            <p class="card-meta"><time datetime="2026-05-05">5 May 2026</time><span aria-hidden="true">·</span> 2 min read</p>
+                            <div class="card-tags">
+                                <span class="card-tag">Terraform</span>
+                                <span class="card-tag">Infrastructure</span>
+                                <span class="card-tag">DevOps</span>
+                                <span class="card-tag">Best practices</span>
+                            </div>
+                            <a href="writing/terraform-best-practices.html">Read article</a>
+                        </article>
                     </div>
-                    <a href="writing/terraform-best-practices.html">Read article</a>
-                </article>
-                <article class="writing-card" data-tags="observability,platform engineering,sre,monitoring">
-                    <span>Observability</span>
-                    <h3>Observability foundations for platform teams</h3>
-                    <p>How to move from dashboards to signals, ownership, and reliable incident response.</p>
-                    <p class="card-meta"><time datetime="2026-05-20">20 May 2026</time><span aria-hidden="true">·</span> 2 min read</p>
-                    <div class="card-tags">
-                        <span class="card-tag">Observability</span>
-                        <span class="card-tag">Platform engineering</span>
-                        <span class="card-tag">SRE</span>
-                        <span class="card-tag">Monitoring</span>
+                </section>
+
+                <!-- Chapter 3: Reliability & Observability -->
+                <section class="writing-chapter" id="chapter-reliability-observability">
+                    <header class="chapter-header">
+                        <div class="chapter-heading-row">
+                            <h2 class="chapter-title">Reliability &amp; Observability</h2>
+                            <span class="chapter-count">1 Article</span>
+                        </div>
+                        <p class="chapter-desc">Production telemetry, incident response dynamics, actionable alerting signals, and platform-grade SRE principles.</p>
+                    </header>
+                    <div class="writing-grid">
+                        <article class="writing-card" data-tags="observability,platform engineering,sre,monitoring">
+                            <span>Observability</span>
+                            <h3>Observability foundations for platform teams</h3>
+                            <p>How to move from dashboards to signals, ownership, and reliable incident response.</p>
+                            <p class="card-meta"><time datetime="2026-05-20">20 May 2026</time><span aria-hidden="true">·</span> 2 min read</p>
+                            <div class="card-tags">
+                                <span class="card-tag">Observability</span>
+                                <span class="card-tag">Platform engineering</span>
+                                <span class="card-tag">SRE</span>
+                                <span class="card-tag">Monitoring</span>
+                            </div>
+                            <a href="writing/observability-for-platforms.html">Read article</a>
+                        </article>
                     </div>
-                    <a href="writing/observability-for-platforms.html">Read article</a>
-                </article>
-                <article class="writing-card" data-tags="ai infrastructure,mlops,governance,compute">
-                    <span>AI infrastructure</span>
-                    <h3>Practical infrastructure foundations for AI teams</h3>
-                    <p>Governed environments, scalable compute, artifact paths, cost controls, and deployment
-                        foundations.</p>
-                    <p class="card-meta"><time datetime="2026-06-05">5 Jun 2026</time><span aria-hidden="true">·</span> 2 min read</p>
-                    <div class="card-tags">
-                        <span class="card-tag">AI infrastructure</span>
-                        <span class="card-tag">MLOps</span>
-                        <span class="card-tag">Governance</span>
-                        <span class="card-tag">Compute</span>
+                </section>
+
+                <!-- Chapter 4: AI Systems & MCP -->
+                <section class="writing-chapter" id="chapter-ai-systems-mcp">
+                    <header class="chapter-header">
+                        <div class="chapter-heading-row">
+                            <h2 class="chapter-title">AI Systems &amp; MCP</h2>
+                            <span class="chapter-count">4 Articles</span>
+                        </div>
+                        <p class="chapter-desc">Model Context Protocol servers, agent execution runtimes, local LLM inference tooling, and scalable AI infrastructure.</p>
+                    </header>
+                    <div class="writing-grid">
+                        <article class="writing-card" data-tags="ai infrastructure,mlops,governance,compute">
+                            <span>AI infrastructure</span>
+                            <h3>Practical infrastructure foundations for AI teams</h3>
+                            <p>Governed environments, scalable compute, artifact paths, cost controls, and deployment
+                                foundations.</p>
+                            <p class="card-meta"><time datetime="2026-06-05">5 Jun 2026</time><span aria-hidden="true">·</span> 2 min read</p>
+                            <div class="card-tags">
+                                <span class="card-tag">AI infrastructure</span>
+                                <span class="card-tag">MLOps</span>
+                                <span class="card-tag">Governance</span>
+                                <span class="card-tag">Compute</span>
+                            </div>
+                            <a href="writing/ai-infrastructure-foundations.html">Read article</a>
+                        </article>
+                        <article class="writing-card" data-tags="ai ops,mlops,observability,governance,cost">
+                            <span>AI Ops</span>
+                            <h3>AI Ops trends to watch in 2026</h3>
+                            <p>Practical shifts in model observability, reproducibility, governance, and cost-aware lifecycle.
+                            </p>
+                            <p class="card-meta"><time datetime="2026-06-05">5 Jun 2026</time><span aria-hidden="true">·</span> 2 min read</p>
+                            <div class="card-tags">
+                                <span class="card-tag">AI Ops</span>
+                                <span class="card-tag">MLOps</span>
+                                <span class="card-tag">Observability</span>
+                                <span class="card-tag">Governance</span>
+                                <span class="card-tag">Cost</span>
+                            </div>
+                            <a href="writing/trending-ai-ops-2026.html">Read article</a>
+                        </article>
+                        <article class="writing-card"
+                            data-tags="mcp,ai infrastructure,developer productivity,prompt engineering">
+                            <span>MCP Skills</span>
+                            <h3>Build MCP skills for AI assistants</h3>
+                            <p>Practical guidance for designing, validating, and integrating custom AI assistant skills.</p>
+                            <p class="card-meta"><time datetime="2026-06-05">5 Jun 2026</time><span aria-hidden="true">·</span> 3 min read</p>
+                            <div class="card-tags">
+                                <span class="card-tag">MCP</span>
+                                <span class="card-tag">AI infrastructure</span>
+                                <span class="card-tag">Developer productivity</span>
+                                <span class="card-tag">Prompt engineering</span>
+                            </div>
+                            <a href="writing/mcp-skills-for-ai.html">Read article</a>
+                        </article>
+                        <article class="writing-card" data-tags="open source,local ai,openllm,ai models,inference">
+                            <span>Open source AI</span>
+                            <h3>Run AI models locally with OpenLLM</h3>
+                            <p>How to use OpenLLM and open-source tooling for local model inference and experimentation.</p>
+                            <p class="card-meta"><time datetime="2026-06-05">5 Jun 2026</time><span aria-hidden="true">·</span> 2 min read</p>
+                            <div class="card-tags">
+                                <span class="card-tag">Open source</span>
+                                <span class="card-tag">Local AI</span>
+                                <span class="card-tag">OpenLLM</span>
+                                <span class="card-tag">AI models</span>
+                            </div>
+                            <a href="writing/openllm-local-ai-models.html">Read article</a>
+                        </article>
                     </div>
-                    <a href="writing/ai-infrastructure-foundations.html">Read article</a>
-                </article>
-                <article class="writing-card" data-tags="ai ops,mlops,observability,governance,cost">
-                    <span>AI Ops</span>
-                    <h3>AI Ops trends to watch in 2026</h3>
-                    <p>Practical shifts in model observability, reproducibility, governance, and cost-aware lifecycle.
-                    </p>
-                    <p class="card-meta"><time datetime="2026-06-05">5 Jun 2026</time><span aria-hidden="true">·</span> 2 min read</p>
-                    <div class="card-tags">
-                        <span class="card-tag">AI Ops</span>
-                        <span class="card-tag">MLOps</span>
-                        <span class="card-tag">Observability</span>
-                        <span class="card-tag">Governance</span>
-                        <span class="card-tag">Cost</span>
+                </section>
+
+                <!-- Chapter 5: Cost, Security & Governance -->
+                <section class="writing-chapter" id="chapter-cost-security-governance">
+                    <header class="chapter-header">
+                        <div class="chapter-heading-row">
+                            <h2 class="chapter-title">Cost, Security &amp; Governance</h2>
+                            <span class="chapter-count">2 Articles</span>
+                        </div>
+                        <p class="chapter-desc">FinOps cloud unit economics, Kubernetes supply-chain hardening, runtime security policies, and least-privilege IAM.</p>
+                    </header>
+                    <div class="writing-grid">
+                        <article class="writing-card" data-tags="finops,cost,autoscaling,telemetry">
+                            <span>FinOps</span>
+                            <h3>Cloud cost optimization patterns for 2026</h3>
+                            <p>Autoscaling economics, spot strategies, and telemetry-driven rightsizing to control cloud spend.
+                            </p>
+                            <p class="card-meta"><time datetime="2026-06-05">5 Jun 2026</time><span aria-hidden="true">·</span> 2 min read</p>
+                            <div class="card-tags">
+                                <span class="card-tag">FinOps</span>
+                                <span class="card-tag">Cost</span>
+                                <span class="card-tag">Autoscaling</span>
+                                <span class="card-tag">Telemetry</span>
+                            </div>
+                            <a href="writing/cloud-cost-optimization-2026.html">Read article</a>
+                        </article>
+                        <article class="writing-card" data-tags="kubernetes,security,policy,runtime protection">
+                            <span>Kubernetes</span>
+                            <h3>Kubernetes security priorities for 2026</h3>
+                            <p>Supply chain hardening, RBAC least-privilege, and runtime protection approaches.</p>
+                            <p class="card-meta"><time datetime="2026-06-05">5 Jun 2026</time><span aria-hidden="true">·</span> 2 min read</p>
+                            <div class="card-tags">
+                                <span class="card-tag">Kubernetes</span>
+                                <span class="card-tag">Security</span>
+                                <span class="card-tag">Policy</span>
+                                <span class="card-tag">Runtime protection</span>
+                            </div>
+                            <a href="writing/k8s-security-2026.html">Read article</a>
+                        </article>
                     </div>
-                    <a href="writing/trending-ai-ops-2026.html">Read article</a>
-                </article>
-                <article class="writing-card" data-tags="finops,cost,autoscaling,telemetry">
-                    <span>FinOps</span>
-                    <h3>Cloud cost optimization patterns for 2026</h3>
-                    <p>Autoscaling economics, spot strategies, and telemetry-driven rightsizing to control cloud spend.
-                    </p>
-                    <p class="card-meta"><time datetime="2026-06-05">5 Jun 2026</time><span aria-hidden="true">·</span> 2 min read</p>
-                    <div class="card-tags">
-                        <span class="card-tag">FinOps</span>
-                        <span class="card-tag">Cost</span>
-                        <span class="card-tag">Autoscaling</span>
-                        <span class="card-tag">Telemetry</span>
-                    </div>
-                    <a href="writing/cloud-cost-optimization-2026.html">Read article</a>
-                </article>
-                <article class="writing-card" data-tags="kubernetes,security,policy,runtime protection">
-                    <span>Kubernetes</span>
-                    <h3>Kubernetes security priorities for 2026</h3>
-                    <p>Supply chain hardening, RBAC least-privilege, and runtime protection approaches.</p>
-                    <p class="card-meta"><time datetime="2026-06-05">5 Jun 2026</time><span aria-hidden="true">·</span> 2 min read</p>
-                    <div class="card-tags">
-                        <span class="card-tag">Kubernetes</span>
-                        <span class="card-tag">Security</span>
-                        <span class="card-tag">Policy</span>
-                        <span class="card-tag">Runtime protection</span>
-                    </div>
-                    <a href="writing/k8s-security-2026.html">Read article</a>
-                </article>
-                <article class="writing-card"
-                    data-tags="mcp,ai infrastructure,developer productivity,prompt engineering">
-                    <span>MCP Skills</span>
-                    <h3>Build MCP skills for AI assistants</h3>
-                    <p>Practical guidance for designing, validating, and integrating custom AI assistant skills.</p>
-                    <p class="card-meta"><time datetime="2026-06-05">5 Jun 2026</time><span aria-hidden="true">·</span> 3 min read</p>
-                    <div class="card-tags">
-                        <span class="card-tag">MCP</span>
-                        <span class="card-tag">AI infrastructure</span>
-                        <span class="card-tag">Developer productivity</span>
-                        <span class="card-tag">Prompt engineering</span>
-                    </div>
-                    <a href="writing/mcp-skills-for-ai.html">Read article</a>
-                </article>
-                <article class="writing-card" data-tags="open source,local ai,openllm,ai models,inference">
-                    <span>Open source AI</span>
-                    <h3>Run AI models locally with OpenLLM</h3>
-                    <p>How to use OpenLLM and open-source tooling for local model inference and experimentation.</p>
-                    <p class="card-meta"><time datetime="2026-06-05">5 Jun 2026</time><span aria-hidden="true">·</span> 2 min read</p>
-                    <div class="card-tags">
-                        <span class="card-tag">Open source</span>
-                        <span class="card-tag">Local AI</span>
-                        <span class="card-tag">OpenLLM</span>
-                        <span class="card-tag">AI models</span>
-                    </div>
-                    <a href="writing/openllm-local-ai-models.html">Read article</a>
-                </article>
+                </section>
             </div>
             <p class="no-results hidden" aria-live="polite">No articles match your search or selected tags.</p>
+        </section>
+
+        <!-- Feature 12: Curated Agent Engineering Signals Section -->
+        <section id="signals" class="signals-section section page-section" aria-labelledby="signals-heading">
+            <div class="section-header">
+                <span class="eyebrow"><i class="fa fa-bolt" aria-hidden="true"></i> Field Radar</span>
+                <h2 id="signals-heading" class="section-title">Agent Engineering Signals</h2>
+                <p class="section-subtitle">Curated takeaways and architectural principles from leading practitioners across the AI engineering conference circuit.</p>
+            </div>
+            <div class="signals-grid">
+                <!-- Card 1: Samuel Colvin -->
+                <article class="signal-card">
+                    <div class="signal-meta">
+                        <span class="signal-tag">Protocols &amp; Tooling</span>
+                        <span class="signal-conf">AI Engineer World's Fair 2024</span>
+                    </div>
+                    <blockquote class="signal-quote">
+                        "The fastest path to robust LLM tool use is strict runtime validation and type-safe schema generation. FastMCP eliminates boilerplate, allowing agents to inspect tool definitions deterministically without hallucinations."
+                    </blockquote>
+                    <footer class="signal-speaker">
+                        <div class="speaker-info">
+                            <strong class="speaker-name">Samuel Colvin</strong>
+                            <span class="speaker-role">Creator of Pydantic &amp; FastMCP</span>
+                        </div>
+                        <a href="https://github.com/pydantic/pydantic" class="signal-link" target="_blank" rel="noopener noreferrer" aria-label="FastMCP and Pydantic source">
+                            <span>Source</span>
+                            <i class="fa fa-external-link" aria-hidden="true"></i>
+                        </a>
+                    </footer>
+                </article>
+
+                <!-- Card 2: Dex Horthy -->
+                <article class="signal-card">
+                    <div class="signal-meta">
+                        <span class="signal-tag">Agent Reliability &amp; Latency</span>
+                        <span class="signal-conf">AI Engineer Summit 2024</span>
+                    </div>
+                    <blockquote class="signal-quote">
+                        "Autonomous loops degrade rapidly when tool execution latency exceeds 1.5 seconds. Production agent systems require deterministic execution budgets, eager human-in-the-loop approvals for destructive operations, and aggressive tool schema minimization."
+                    </blockquote>
+                    <footer class="signal-speaker">
+                        <div class="speaker-info">
+                            <strong class="speaker-name">Dex Horthy</strong>
+                            <span class="speaker-role">Founder &amp; CEO, Humanlayer</span>
+                        </div>
+                        <a href="https://humanlayer.dev/" class="signal-link" target="_blank" rel="noopener noreferrer" aria-label="Humanlayer and Agent Tool Latency research">
+                            <span>Source</span>
+                            <i class="fa fa-external-link" aria-hidden="true"></i>
+                        </a>
+                    </footer>
+                </article>
+
+                <!-- Card 3: Mahesh Murag -->
+                <article class="signal-card">
+                    <div class="signal-meta">
+                        <span class="signal-tag">Agent Architecture</span>
+                        <span class="signal-conf">AI Engineer Summit (San Francisco)</span>
+                    </div>
+                    <blockquote class="signal-quote">
+                        "Effective agent architecture is less about complex graph routing and more about context engineering. Minimize prompt distraction, curate compact tool interfaces, and evaluate agent decision boundaries on isolated golden trajectories."
+                    </blockquote>
+                    <footer class="signal-speaker">
+                        <div class="speaker-info">
+                            <strong class="speaker-name">Mahesh Murag</strong>
+                            <span class="speaker-role">Applied AI &amp; Agent Tool Use, Anthropic</span>
+                        </div>
+                        <a href="https://www.anthropic.com/research/building-effective-agents" class="signal-link" target="_blank" rel="noopener noreferrer" aria-label="Anthropic Building Effective Agents research">
+                            <span>Source</span>
+                            <i class="fa fa-external-link" aria-hidden="true"></i>
+                        </a>
+                    </footer>
+                </article>
+
+                <!-- Card 4: Nir Gazit -->
+                <article class="signal-card">
+                    <div class="signal-meta">
+                        <span class="signal-tag">Observability &amp; Tracing</span>
+                        <span class="signal-conf">AI Engineer World's Fair 2024</span>
+                    </div>
+                    <blockquote class="signal-quote">
+                        "You cannot optimize what you do not trace. Standardizing OpenLLMetry with OpenTelemetry traces across every tool invocation and prompt step provides the deterministic telemetry needed to govern multi-agent workflows."
+                    </blockquote>
+                    <footer class="signal-speaker">
+                        <div class="speaker-info">
+                            <strong class="speaker-name">Nir Gazit</strong>
+                            <span class="speaker-role">Co-Founder &amp; CEO, Traceloop</span>
+                        </div>
+                        <a href="https://github.com/traceloop/openllmetry" class="signal-link" target="_blank" rel="noopener noreferrer" aria-label="OpenLLMetry GitHub Repository">
+                            <span>Source</span>
+                            <i class="fa fa-external-link" aria-hidden="true"></i>
+                        </a>
+                    </footer>
+                </article>
+            </div>
         </section>
     </main>
 
@@ -354,134 +486,128 @@
     <script>
         (function () {
             const searchInput = document.getElementById('write-search');
-            const tagFilters = document.querySelector('.tag-filters');
-            const tagButtons = Array.from(document.querySelectorAll('.tag-pill'));
+            const clearBtn = document.getElementById('clear-filters');
             const cards = Array.from(document.querySelectorAll('.writing-card'));
+            const chapters = Array.from(document.querySelectorAll('.writing-chapter'));
             const noResults = document.querySelector('.no-results');
+            const resultCount = document.querySelector('.result-count');
 
-            const normalize = value => (value || '').toLowerCase();
-            const getQueryParam = name => new URLSearchParams(window.location.search).get(name);
+            if (!searchInput) return;
 
-            const selectedTags = new Set();
-            const updateUrl = () => {
-                const params = new URLSearchParams(window.location.search);
-                if (selectedTags.size) {
-                    params.set('tag', Array.from(selectedTags).join(','));
-                } else {
-                    params.delete('tag');
+            const normalize = val => (val || '').toLowerCase().trim();
+
+            const getQueryParam = param => {
+                try {
+                    const params = new URLSearchParams(window.location.search);
+                    const val = params.get(param);
+                    return val ? decodeURIComponent(val) : '';
+                } catch (e) {
+                    return '';
                 }
-                if (searchInput.value.trim()) {
-                    params.set('q', searchInput.value.trim());
-                } else {
-                    params.delete('q');
-                }
-                history.replaceState(null, '', `${window.location.pathname}${params.toString() ? '?' + params.toString() : ''}`);
             };
 
-            const filterCards = () => {
-                const query = normalize(searchInput.value);
-                let visible = 0;
+            const updateUrl = (q) => {
+                try {
+                    const params = new URLSearchParams(window.location.search);
+                    if (q) {
+                        params.set('q', q);
+                    } else {
+                        params.delete('q');
+                    }
+                    params.delete('tag');
+                    const newQuery = params.toString();
+                    const newUrl = window.location.pathname + (newQuery ? '?' + newQuery : '');
+                    history.replaceState(null, '', newUrl);
+                } catch (e) {}
+            };
+
+            const filterCards = (queryOverride) => {
+                const query = normalize(queryOverride !== undefined ? queryOverride : searchInput.value);
+                let visibleCount = 0;
 
                 cards.forEach(card => {
-                    const title = normalize(card.querySelector('h3').textContent);
-                    const desc = normalize(card.querySelector('p').textContent);
-                    const tags = normalize(card.dataset.tags);
-                    const queryMatch = !query || title.includes(query) || desc.includes(query) || tags.includes(query);
-                    const tagMatch = selectedTags.size === 0 || Array.from(selectedTags).some(tag => tags.includes(tag));
-                    const show = queryMatch && tagMatch;
-                    card.style.display = show ? 'flex' : 'none';
-                    if (show) visible += 1;
+                    const titleEl = card.querySelector('h2, h3, .card-title') || card.querySelector('a');
+                    const title = normalize(titleEl ? titleEl.textContent : '');
+                    const descEl = card.querySelector('p');
+                    const desc = normalize(descEl ? descEl.textContent : '');
+                    const dataTags = normalize(card.dataset.tags || '');
+                    const tagEls = Array.from(card.querySelectorAll('.card-tag, .tech-tag'));
+                    const cardTags = tagEls.map(t => normalize(t.textContent)).join(' ');
+
+                    const isMatch = !query ||
+                        title.includes(query) ||
+                        desc.includes(query) ||
+                        dataTags.includes(query) ||
+                        cardTags.includes(query);
+
+                    card.style.display = isMatch ? 'flex' : 'none';
+                    if (isMatch) visibleCount++;
                 });
 
-                const resultCount = document.querySelector('.result-count');
-                resultCount.textContent = visible === 1 ? 'Showing 1 article' : `Showing ${visible} articles`;
-                noResults.classList.toggle('hidden', visible > 0);
-            };
-
-            const toggleTag = button => {
-                const tag = button.dataset.tag;
-                if (selectedTags.has(tag)) {
-                    selectedTags.delete(tag);
-                    button.classList.remove('active');
-                    button.setAttribute('aria-pressed', 'false');
-                } else {
-                    selectedTags.add(tag);
-                    button.classList.add('active');
-                    button.setAttribute('aria-pressed', 'true');
+                if (chapters.length > 0) {
+                    chapters.forEach(chapter => {
+                        const chapterCards = chapter.querySelectorAll('.writing-card');
+                        const hasVisible = Array.from(chapterCards).some(c => c.style.display !== 'none');
+                        chapter.style.display = (!query || hasVisible) ? '' : 'none';
+                    });
                 }
-                updateUrl();
-                filterCards();
-                updateClearButton();
+
+                if (resultCount) {
+                    resultCount.textContent = visibleCount === 1 ? 'Showing 1 article' : 'Showing ' + visibleCount + ' articles';
+                }
+
+                if (noResults) {
+                    noResults.classList.toggle('hidden', visibleCount > 0);
+                }
+
+                if (clearBtn) {
+                    clearBtn.style.display = query ? 'inline-flex' : 'none';
+                }
             };
 
-            const existingTags = new Set(tagButtons.map(btn => btn.dataset.tag.toLowerCase()));
-            const allTags = new Set();
-            cards.forEach(card => {
-                card.dataset.tags.split(',').map(t => t.trim().toLowerCase()).filter(Boolean).forEach(tag => allTags.add(tag));
-            });
-
-            allTags.forEach(tag => {
-                if (!existingTags.has(tag)) {
-                    const button = document.createElement('button');
-                    button.type = 'button';
-                    button.className = 'tag-pill';
-                    button.dataset.tag = tag;
-                    button.setAttribute('aria-pressed', 'false');
-                    button.textContent = tag
-                        .split(' ')
-                        .map(word => word.charAt(0).toUpperCase() + word.slice(1))
-                        .join(' ');
-                    tagFilters.appendChild(button);
-                    tagButtons.push(button);
+            // In-card tag clicking: clicking an in-card tag filters articles by that tag
+            document.addEventListener('click', (e) => {
+                const tagEl = e.target.closest('.card-tag, .tech-tag');
+                if (tagEl && tagEl.closest('.writing-card')) {
+                    e.preventDefault();
+                    const tagText = tagEl.textContent.trim();
+                    searchInput.value = tagText;
+                    updateUrl(tagText);
+                    filterCards(tagText);
+                    searchInput.focus();
                 }
             });
 
-            tagButtons.forEach(button => {
-                button.addEventListener('click', () => toggleTag(button));
-            });
-
-            const initialTag = getQueryParam('tag');
-            const initialQuery = getQueryParam('q');
-            if (initialQuery) {
-                searchInput.value = initialQuery;
-            }
-            if (initialTag) {
-                initialTag.split(',').map(t => t.trim().toLowerCase()).forEach(tag => {
-                    const button = tagButtons.find(btn => btn.dataset.tag === tag);
-                    if (button) {
-                        selectedTags.add(tag);
-                        button.classList.add('active');
-                        button.setAttribute('aria-pressed', 'true');
-                    }
-                });
-            }
-
+            // Live search input
             searchInput.addEventListener('input', () => {
-                updateUrl();
+                const q = searchInput.value;
+                updateUrl(q.trim());
                 filterCards();
-                updateClearButton();
             });
 
-            const clearFiltersButton = document.getElementById('clear-filters');
-            const updateClearButton = () => {
-                const hasFilters = selectedTags.size > 0 || searchInput.value.trim().length > 0;
-                clearFiltersButton.disabled = !hasFilters;
-            };
-
-            clearFiltersButton.addEventListener('click', () => {
-                selectedTags.clear();
-                tagButtons.forEach(btn => {
-                    btn.classList.remove('active');
-                    btn.setAttribute('aria-pressed', 'false');
+            // Clear button
+            if (clearBtn) {
+                clearBtn.addEventListener('click', () => {
+                    searchInput.value = '';
+                    updateUrl('');
+                    filterCards('');
+                    searchInput.focus();
                 });
-                searchInput.value = '';
-                updateUrl();
-                filterCards();
-                updateClearButton();
-            });
+            }
 
-            filterCards();
-            updateClearButton();
+            // Initialize from URL parameters (?q=... or ?tag=...)
+            const initQuery = getQueryParam('q');
+            const initTag = getQueryParam('tag');
+            if (initQuery) {
+                searchInput.value = initQuery;
+                filterCards(initQuery);
+            } else if (initTag) {
+                const firstTag = initTag.split(',')[0].trim();
+                searchInput.value = firstTag;
+                filterCards(firstTag);
+            } else {
+                filterCards('');
+            }
         })();
     </script>
     <script src="js/site-ui.js" defer></script>

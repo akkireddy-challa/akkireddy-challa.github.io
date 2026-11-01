@@ -53,8 +53,10 @@
 
     <title>Akkireddy Challa | Multi-Cloud Platform Engineer & AI Infrastructure</title>
 
-    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
-    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <!-- Favicon Suite: Modern SVG (Theme-Adaptive & Retina) with Fallbacks -->
+    <link rel="icon" type="image/svg+xml" href="images/favicon.svg">
+    <link rel="alternate icon" href="favicon.ico" type="image/x-icon">
+    <link rel="apple-touch-icon" sizes="180x180" href="images/apple-touch-icon.png">
 
     <!-- Preconnect Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -115,7 +117,19 @@
     <!-- Floating Island Site Header -->
     <header class="site-header">
         <div class="brand-wrapper">
-            <a class="brand" href="#top" aria-label="Akkireddy Challa Home">AC</a>
+            <a class="brand" href="#top" aria-label="Akkireddy Challa Home">
+                <svg class="brand-logo" width="28" height="28" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false">
+                    <!-- Architectural Letter A -->
+                    <path class="brand-letter" d="M 7.5 38 L 14 10 L 17.5 10 L 24 38" />
+                    <!-- Architectural Letter C -->
+                    <path class="brand-letter" d="M 41 14 L 37 10 L 31 10 L 27 14 L 27 34 L 31 38 L 37 38 L 41 34" />
+                    <!-- Agentic Routing Conduit -->
+                    <path class="brand-route" d="M 10.5 27 L 20 27 L 24.5 22.5 L 33 22.5" />
+                    <!-- Terminal Routing Nodes -->
+                    <circle class="brand-node" cx="10.5" cy="27" r="2.2" />
+                    <circle class="brand-node" cx="33" cy="22.5" r="2.5" />
+                </svg>
+            </a>
             <div class="brand-meta">
                 <span class="brand-name">Akkireddy Challa</span>
                 <span class="brand-tag"><span class="pulse-dot"></span> Stockholm • eu-north-1</span>
@@ -210,14 +224,25 @@
                 <div class="mcp-studio-card" role="region" aria-label="Interactive MCP Agent Playground">
                     <div class="terminal-header">
                         <div class="terminal-controls">
-                            <span class="terminal-dot dot-red"></span>
-                            <span class="terminal-dot dot-yellow"></span>
-                            <span class="terminal-dot dot-green"></span>
+                            <span class="terminal-dot dot-red" aria-hidden="true"></span>
+                            <span class="terminal-dot dot-yellow" aria-hidden="true"></span>
+                            <span class="terminal-dot dot-green" aria-hidden="true"></span>
                         </div>
                         <div class="terminal-title">
                             <span>AGENTIC RUNTIME</span>
-                            <span class="pill">MCP STDIO</span>
+                            <span class="pill pill-interactive-demo" aria-label="Interactive Demo Badge">
+                                <span class="pulse-dot" aria-hidden="true"></span>INTERACTIVE DEMO
+                            </span>
+                            <span class="pill pill-stdio">MCP STDIO</span>
                         </div>
+                    </div>
+
+                    <!-- MCP Helper Subtitle / Interactive Guidance -->
+                    <div class="mcp-helper-bar">
+                        <p class="mcp-helper-hint">
+                            <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="12" cy="12" r="10"></circle><line x1="12" y1="16" x2="12" y2="12"></line><line x1="12" y1="8" x2="12.01" y2="8"></line></svg>
+                            <span>Live interactive agent runtime simulator — Select an MCP server tab or click <strong>Run Tool</strong> to execute.</span>
+                        </p>
                     </div>
 
                     <!-- MCP Server Selector Tabs -->
@@ -247,51 +272,76 @@
 
                     <!-- Terminal Actions Bar -->
                     <div class="terminal-actions-bar">
-                        <div style="display: flex; gap: 8px;">
-                            <button type="button" class="terminal-action-btn btn-run" id="btn-run-tool">
-                                <svg width="12" height="12" viewBox="0 0 24 24" fill="currentColor"><polygon points="5 3 19 12 5 21 5 3"></polygon></svg>
+                        <div class="terminal-actions-group" style="display: flex; gap: 8px;">
+                            <button type="button" class="terminal-action-btn btn-run" id="btn-run-tool" aria-label="Run tool simulation">
+                                <svg width="12" height="12" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><polygon points="5 3 19 12 5 21 5 3"></polygon></svg>
                                 <span>Run Tool</span>
                             </button>
-                            <button type="button" class="terminal-action-btn" id="btn-copy-config">
-                                <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path></svg>
+                            <button type="button" class="terminal-action-btn btn-copy" id="btn-copy-config" aria-label="Copy server configuration JSON">
+                                <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path></svg>
                                 <span>Copy Config</span>
                             </button>
                         </div>
-                        <a href="https://github.com/akkireddy-challa/k8s-mcp-server" target="_blank" rel="noopener noreferrer" class="terminal-action-btn" id="mcp-repo-link">
-                            Open k8s-mcp-server ↗
+                        <a href="https://github.com/akkireddy-challa/k8s-mcp-server" target="_blank" rel="noopener noreferrer" class="terminal-action-btn btn-repo" id="mcp-repo-link" aria-label="Open k8s-mcp-server repository on GitHub">
+                            <span>Open k8s-mcp-server ↗</span>
                         </a>
                     </div>
                 </div>
             </div>
         </section>
 
-        <!-- Live Telemetry & Metrics Strip -->
-        <section class="telemetry-section" aria-label="System Highlights & Telemetry">
-            <div class="telemetry-grid">
-                <div class="telemetry-item">
-                    <span class="telemetry-label">Stockholm Hub</span>
-                    <span class="telemetry-val" id="stockholm-clock">00:00 CET</span>
-                    <span class="telemetry-sub">eu-north-1 • Active</span>
+        <!-- Calmer Status Strip (Replaces 5 Bulky Telemetry Cards) -->
+        <section class="status-strip" aria-label="System Highlights & Real-Time Status">
+            <div class="status-strip-inner">
+                <div class="status-pill">
+                    <span class="pulse-dot" aria-hidden="true"></span>
+                    <div class="status-content">
+                        <div class="status-primary">
+                            <span class="status-label">Stockholm Hub</span>
+                            <span class="status-val font-mono" id="stockholm-clock">00:00 CET</span>
+                        </div>
+                        <span class="status-sub">eu-north-1 • Active</span>
+                    </div>
                 </div>
-                <div class="telemetry-item">
-                    <span class="telemetry-label">Multi-Cloud</span>
-                    <span class="telemetry-val">3 <span class="unit">Clouds</span></span>
-                    <span class="telemetry-sub">GCP • AWS • Azure</span>
+                <div class="status-divider" aria-hidden="true"></div>
+                <div class="status-pill">
+                    <div class="status-content">
+                        <div class="status-primary">
+                            <span class="status-label">Multi-Cloud</span>
+                            <span class="status-val">3 <span class="unit">Clouds</span></span>
+                        </div>
+                        <span class="status-sub">GCP • AWS • Azure</span>
+                    </div>
                 </div>
-                <div class="telemetry-item">
-                    <span class="telemetry-label">Agentic Tools</span>
-                    <span class="telemetry-val">4+ <span class="unit">MCPs</span></span>
-                    <span class="telemetry-sub">K8s • Azure • Grafana • Phoenix</span>
+                <div class="status-divider" aria-hidden="true"></div>
+                <div class="status-pill">
+                    <div class="status-content">
+                        <div class="status-primary">
+                            <span class="status-label">Agentic Tools</span>
+                            <span class="status-val">4+ <span class="unit">MCPs</span></span>
+                        </div>
+                        <span class="status-sub">K8s • Azure • Grafana • Phoenix</span>
+                    </div>
                 </div>
-                <div class="telemetry-item">
-                    <span class="telemetry-label">Open Source</span>
-                    <span class="telemetry-val">113+ <span class="unit">Stars</span></span>
-                    <span class="telemetry-sub">35+ Public Repositories</span>
+                <div class="status-divider" aria-hidden="true"></div>
+                <div class="status-pill">
+                    <div class="status-content">
+                        <div class="status-primary">
+                            <span class="status-label">Open Source</span>
+                            <span class="status-val">113+ <span class="unit">Stars</span></span>
+                        </div>
+                        <span class="status-sub">35+ Public Repositories</span>
+                    </div>
                 </div>
-                <div class="telemetry-item">
-                    <span class="telemetry-label">CS Foundation</span>
-                    <span class="telemetry-val">M.Sc.</span>
-                    <span class="telemetry-sub">Blekinge Inst. of Tech (Sweden)</span>
+                <div class="status-divider" aria-hidden="true"></div>
+                <div class="status-pill">
+                    <div class="status-content">
+                        <div class="status-primary">
+                            <span class="status-label">CS Foundation</span>
+                            <span class="status-val">M.Sc.</span>
+                        </div>
+                        <span class="status-sub">Blekinge Inst. of Tech (Sweden)</span>
+                    </div>
                 </div>
             </div>
         </section>
@@ -348,54 +398,108 @@
             </div>
 
             <div class="bento-grid">
-                <!-- 1. Nova: Self-Hosted AI Research Assistant (Span 8) -->
-                <article class="bento-card col-span-8 highlight" data-category="mcp" data-tags="mcp,agents,typescript,nextjs,rag">
+                <!-- 1. Nova: AI Research Engine Case Study (Span 8) -->
+                <article class="bento-card col-span-8 highlight case-study-card" data-category="mcp" data-tags="mcp,agents,typescript,nextjs,rag">
                     <div class="card-top">
-                        <span class="card-category-badge">Autonomous Research Assistant</span>
+                        <span class="card-category-badge">Case Study · Autonomous Research</span>
                         <div class="card-stars">
-                            <svg viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
-                            <span>Self-Hosted</span>
+                            <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
+                            <span>Self-Hosted Production</span>
                         </div>
                     </div>
                     <div class="card-middle">
                         <h3>
                             Nova: AI Research Engine with Cited Visual Cards
-                            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
+                            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
                         </h3>
-                        <p>Self-hosted Perplexity alternative that searches the web and orchestrates the LLM you choose (Claude 3.5, Gemini 2.0, OpenAI, or local Ollama) to write deeply cited answers with interactive generative UI cards.</p>
+                        <p class="case-study-summary">Self-hosted Perplexity alternative that searches the web and orchestrates multi-model routing across local and frontier LLMs to synthesize answers into interactive generative UI cards.</p>
+                        
+                        <div class="case-study-breakdown">
+                            <div class="case-study-subblock">
+                                <h4 class="subblock-label problem-label">
+                                    <svg class="subblock-icon" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="12" cy="12" r="10"></circle><line x1="12" y1="8" x2="12" y2="12"></line><line x1="12" y1="16" x2="12.01" y2="16"></line></svg>
+                                    Problem
+                                </h4>
+                                <p class="subblock-text">Commercial AI answer engines enforce vendor lock-in, obscure intermediate search reasoning, and lack deterministic provenance citations.</p>
+                            </div>
+                            <div class="case-study-subblock">
+                                <h4 class="subblock-label architecture-label">
+                                    <svg class="subblock-icon" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="2" y="2" width="20" height="8" rx="2" ry="2"></rect><rect x="2" y="14" width="20" height="8" rx="2" ry="2"></rect><line x1="6" y1="6" x2="6.01" y2="6"></line><line x1="6" y1="18" x2="6.01" y2="18"></line></svg>
+                                    Architecture
+                                </h4>
+                                <p class="subblock-text">Next.js 15, LiteLLM gateway routing across Claude 3.5 Sonnet &amp; Gemini 2.0, hybrid vector/keyword retrieval, generative UI streaming.</p>
+                            </div>
+                            <div class="case-study-subblock">
+                                <h4 class="subblock-label outcome-label">
+                                    <svg class="subblock-icon" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path><polyline points="22 4 12 14.01 9 11.01"></polyline></svg>
+                                    Outcome
+                                </h4>
+                                <p class="subblock-text">Self-hosted research platform delivering cited, visual intelligence cards with zero vendor lock-in.</p>
+                            </div>
+                        </div>
+
                         <div class="card-tags">
                             <span class="tech-tag">TypeScript</span>
                             <span class="tech-tag">Next.js 15</span>
                             <span class="tech-tag">LiteLLM</span>
                             <span class="tech-tag">Claude / Gemini</span>
                             <span class="tech-tag">Generative UI</span>
-                            <span class="tech-tag">RAG</span>
+                            <span class="tech-tag">Hybrid RAG</span>
                         </div>
                     </div>
                     <div class="card-bottom">
                         <div class="card-links">
                             <a href="https://github.com/akkireddy-challa/nova" target="_blank" rel="noopener noreferrer" class="card-link">GitHub Repository ↗</a>
                         </div>
-                        <span style="font-family: var(--font-mono); font-size: 0.74rem; color: var(--text-muted);">Stockholm Tech Ecosystem</span>
+                        <span class="card-meta">Stockholm Tech Ecosystem</span>
                     </div>
                 </article>
 
-                <!-- 2. K8s MCP Server (Span 4) -->
-                <article class="bento-card col-span-4 highlight" data-category="mcp" data-tags="mcp,kubernetes,python,ai">
+                <!-- 2. K8s MCP Server Case Study (Span 4) -->
+                <article class="bento-card col-span-4 highlight case-study-card" data-category="mcp" data-tags="mcp,kubernetes,python,ai">
                     <div class="card-top">
-                        <span class="card-category-badge cyan">Model Context Protocol</span>
+                        <span class="card-category-badge cyan">Case Study · SRE Agent</span>
                         <div class="card-stars">
                             <span class="pulse-dot"></span>
                             <span>Live Agent Tool</span>
                         </div>
                     </div>
                     <div class="card-middle">
-                        <h3>K8s MCP Server</h3>
-                        <p>MCP server for debugging, analyzing, and diagnosing Kubernetes clusters directly from AI agents (Cursor, Claude, Antigravity) with root cause inference.</p>
+                        <h3>
+                            K8s MCP Server
+                            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
+                        </h3>
+                        <p class="case-study-summary">MCP server for diagnosing and resolving Kubernetes cluster anomalies directly from agent environments with real-time root-cause inference.</p>
+                        
+                        <div class="case-study-breakdown">
+                            <div class="case-study-subblock">
+                                <h4 class="subblock-label problem-label">
+                                    <svg class="subblock-icon" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="12" cy="12" r="10"></circle><line x1="12" y1="8" x2="12" y2="12"></line><line x1="12" y1="16" x2="12.01" y2="16"></line></svg>
+                                    Problem
+                                </h4>
+                                <p class="subblock-text">Manual triage of cascading Kubernetes pod failures and crashloop states is slow and error-prone during critical production outages.</p>
+                            </div>
+                            <div class="case-study-subblock">
+                                <h4 class="subblock-label architecture-label">
+                                    <svg class="subblock-icon" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="2" y="2" width="20" height="8" rx="2" ry="2"></rect><rect x="2" y="14" width="20" height="8" rx="2" ry="2"></rect><line x1="6" y1="6" x2="6.01" y2="6"></line><line x1="6" y1="18" x2="6.01" y2="18"></line></svg>
+                                    Architecture
+                                </h4>
+                                <p class="subblock-text">FastMCP stdio server in Python, client-go integration, heuristic crashloop &amp; OOM inference, automated remediation policy engine.</p>
+                            </div>
+                            <div class="case-study-subblock">
+                                <h4 class="subblock-label outcome-label">
+                                    <svg class="subblock-icon" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path><polyline points="22 4 12 14.01 9 11.01"></polyline></svg>
+                                    Outcome
+                                </h4>
+                                <p class="subblock-text">Instant root-cause diagnostics and valid Helm patch suggestions generated in seconds for LLM agents.</p>
+                            </div>
+                        </div>
+
                         <div class="card-tags">
                             <span class="tech-tag">Python</span>
                             <span class="tech-tag">Kubernetes</span>
-                            <span class="tech-tag">MCP stdio</span>
+                            <span class="tech-tag">FastMCP</span>
+                            <span class="tech-tag">client-go</span>
                             <span class="tech-tag">SRE Automation</span>
                         </div>
                     </div>
@@ -403,23 +507,53 @@
                         <div class="card-links">
                             <a href="https://github.com/akkireddy-challa/k8s-mcp-server" target="_blank" rel="noopener noreferrer" class="card-link">Open Repo ↗</a>
                         </div>
+                        <span class="card-meta">Production Cluster Ops</span>
                     </div>
                 </article>
 
-                <!-- 3. Azure MCP Platform (Span 6) -->
-                <article class="bento-card col-span-6" data-category="mcp" data-tags="mcp,azure,cloud,python">
+                <!-- 3. Azure MCP Platform Case Study (Span 6) -->
+                <article class="bento-card col-span-6 highlight case-study-card" data-category="mcp" data-tags="mcp,azure,cloud,python">
                     <div class="card-top">
-                        <span class="card-category-badge cyan">Azure AI & Entra ID</span>
+                        <span class="card-category-badge cyan">Case Study · Cloud Governance</span>
                         <span style="font-family: var(--font-mono); font-size: 0.74rem; color: var(--accent);">Multi-Cloud MCP</span>
                     </div>
                     <div class="card-middle">
-                        <h3>Azure MCP Platform</h3>
-                        <p>Inspect Azure infrastructure, AI Foundry model deployments, compute clusters, and Entra ID permissions through AI agents using DefaultAzureCredential without credentials in code.</p>
+                        <h3>
+                            Azure MCP Platform
+                            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
+                        </h3>
+                        <p class="case-study-summary">Inspect Azure infrastructure, AI Foundry model deployments, compute clusters, and Entra ID permissions through AI agents without credentials in code.</p>
+                        
+                        <div class="case-study-breakdown">
+                            <div class="case-study-subblock">
+                                <h4 class="subblock-label problem-label">
+                                    <svg class="subblock-icon" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="12" cy="12" r="10"></circle><line x1="12" y1="8" x2="12" y2="12"></line><line x1="12" y1="16" x2="12.01" y2="16"></line></svg>
+                                    Problem
+                                </h4>
+                                <p class="subblock-text">Autonomous agent workflows querying enterprise cloud resources risk credential leakage and lack centralized identity governance.</p>
+                            </div>
+                            <div class="case-study-subblock">
+                                <h4 class="subblock-label architecture-label">
+                                    <svg class="subblock-icon" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="2" y="2" width="20" height="8" rx="2" ry="2"></rect><rect x="2" y="14" width="20" height="8" rx="2" ry="2"></rect><line x1="6" y1="6" x2="6.01" y2="6"></line><line x1="6" y1="18" x2="6.01" y2="18"></line></svg>
+                                    Architecture
+                                </h4>
+                                <p class="subblock-text">Azure SDK integration with DefaultAzureCredential, Entra ID Workload Identity, audit-logged FastMCP tool endpoints.</p>
+                            </div>
+                            <div class="case-study-subblock">
+                                <h4 class="subblock-label outcome-label">
+                                    <svg class="subblock-icon" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path><polyline points="22 4 12 14.01 9 11.01"></polyline></svg>
+                                    Outcome
+                                </h4>
+                                <p class="subblock-text">Governed, zero-hardcoded-credential infrastructure inspection across Azure AI Foundry and container environments.</p>
+                            </div>
+                        </div>
+
                         <div class="card-tags">
                             <span class="tech-tag">Python</span>
                             <span class="tech-tag">Azure SDK</span>
                             <span class="tech-tag">AI Foundry</span>
                             <span class="tech-tag">Entra ID</span>
+                            <span class="tech-tag">DefaultAzureCredential</span>
                             <span class="tech-tag">FinOps</span>
                         </div>
                     </div>
@@ -427,6 +561,7 @@
                         <div class="card-links">
                             <a href="https://github.com/akkireddy-challa/azure-mcp-platform" target="_blank" rel="noopener noreferrer" class="card-link">GitHub Repository ↗</a>
                         </div>
+                        <span class="card-meta">Enterprise Identity</span>
                     </div>
                 </article>
 
