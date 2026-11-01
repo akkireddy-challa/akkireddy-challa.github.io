@@ -883,6 +883,260 @@
                     <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
                 </a>
             </div>
+
+            <!-- Part B: Curated Agent Engineering Signals -->
+            <div class="signals-header section-header" id="agent-signals">
+                <span class="eyebrow">
+                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"></polygon></svg>
+                    Field Radar
+                </span>
+                <h3 class="section-title">Agent Engineering Signals</h3>
+                <p class="section-subtitle">Curated takeaways and architectural principles from leading practitioners across the AI engineering conference circuit.</p>
+            </div>
+
+            <div class="signals-grid">
+                <!-- Signal 1: Barry Zhang & Mahesh Murag (Anthropic) -->
+                <article class="signal-card" id="signal-skills-architecture">
+                    <div class="signal-meta">
+                        <span class="signal-tag">Skills Architecture</span>
+                        <span class="signal-conf">AI Engineer Summit (San Francisco)</span>
+                    </div>
+                    <blockquote class="signal-quote">
+                        "Don't build monolithic agents; build composable skills instead. Modular skills with strict schemas and isolated boundaries turn unpredictable AI behavior into reliable, testable platform capabilities."
+                    </blockquote>
+                    <div class="signal-application">
+                        <span class="application-label">
+                            <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><line x1="6" y1="3" x2="6" y2="15"></line><circle cx="18" cy="6" r="3"></circle><circle cx="6" cy="18" r="3"></circle><path d="M18 9a9 9 0 0 1-9 9"></path></svg>
+                            How I Apply It
+                        </span>
+                        <p class="application-text">Packaged infrastructure diagnostics into isolated, composable tools across <a href="https://github.com/akkireddy-challa/k8s-mcp-server" target="_blank" rel="noopener noreferrer">k8s-mcp-server</a> and <a href="https://github.com/akkireddy-challa/azure-mcp-platform" target="_blank" rel="noopener noreferrer">azure-mcp-platform</a>.</p>
+                    </div>
+                    <div class="signal-badges">
+                        <span class="signal-badge">#SkillsArchitecture</span>
+                        <span class="signal-badge">#MCP</span>
+                        <span class="signal-badge">#ContextEngineering</span>
+                    </div>
+                    <footer class="signal-speaker">
+                        <div class="speaker-info">
+                            <strong class="speaker-name">Barry Zhang &amp; Mahesh Murag</strong>
+                            <span class="speaker-role">Applied AI &amp; Agent Tool Use, Anthropic</span>
+                        </div>
+                        <div class="signal-actions">
+                            <a href="blog.html#signal-skills-architecture" class="signal-link" aria-label="Explore signal in Field Radar">
+                                <span>Field Radar</span>
+                                <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><polyline points="9 18 15 12 9 6"></polyline></svg>
+                            </a>
+                            <a href="https://ai.engineer/api/data/transcript?slug=agent-skills&amp;format=json" class="signal-link" target="_blank" rel="noopener noreferrer" aria-label="Don't Build Agents, Build Skills Instead talk transcript">
+                                <span>Transcript</span>
+                                <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
+                            </a>
+                        </div>
+                    </footer>
+                </article>
+
+                <!-- Signal 2: Samuel Colvin (Pydantic / FastMCP) -->
+                <article class="signal-card" id="signal-fastmcp">
+                    <div class="signal-meta">
+                        <span class="signal-tag">Protocols &amp; Tooling</span>
+                        <span class="signal-conf">AI Engineer World's Fair 2024</span>
+                    </div>
+                    <blockquote class="signal-quote">
+                        "The fastest path to robust LLM tool use is strict runtime validation and type-safe schema generation. FastMCP eliminates boilerplate, allowing agents to inspect tool definitions deterministically without hallucinations."
+                    </blockquote>
+                    <div class="signal-application">
+                        <span class="application-label">
+                            <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><line x1="6" y1="3" x2="6" y2="15"></line><circle cx="18" cy="6" r="3"></circle><circle cx="6" cy="18" r="3"></circle><path d="M18 9a9 9 0 0 1-9 9"></path></svg>
+                            How I Apply It
+                        </span>
+                        <p class="application-text">Standardized Pydantic v2 schemas in <a href="https://github.com/akkireddy-challa/k8s-mcp-server" target="_blank" rel="noopener noreferrer">k8s-mcp-server</a> and <a href="https://github.com/akkireddy-challa/grafana-mcp-observability" target="_blank" rel="noopener noreferrer">grafana-mcp-observability</a> for zero-drift tool schema generation.</p>
+                    </div>
+                    <div class="signal-badges">
+                        <span class="signal-badge">#MCP</span>
+                        <span class="signal-badge">#FastMCP</span>
+                        <span class="signal-badge">#TypeSafety</span>
+                    </div>
+                    <footer class="signal-speaker">
+                        <div class="speaker-info">
+                            <strong class="speaker-name">Samuel Colvin</strong>
+                            <span class="speaker-role">Creator of Pydantic &amp; FastMCP</span>
+                        </div>
+                        <div class="signal-actions">
+                            <a href="blog.html#signal-fastmcp" class="signal-link" aria-label="Explore signal in Field Radar">
+                                <span>Field Radar</span>
+                                <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><polyline points="9 18 15 12 9 6"></polyline></svg>
+                            </a>
+                            <a href="https://github.com/pydantic/pydantic" class="signal-link" target="_blank" rel="noopener noreferrer" aria-label="FastMCP and Pydantic source">
+                                <span>Source</span>
+                                <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
+                            </a>
+                        </div>
+                    </footer>
+                </article>
+
+                <!-- Signal 3: AI Coding Workflow -->
+                <article class="signal-card" id="signal-ai-coding">
+                    <div class="signal-meta">
+                        <span class="signal-tag">AI Coding Workflows</span>
+                        <span class="signal-conf">AI Engineer Conference Circuit</span>
+                    </div>
+                    <blockquote class="signal-quote">
+                        "An AI coding workflow cannot rely on LLM self-reporting; it must terminate in deterministic verification gates: automated linting, type-checking, headless test suites, and strict boundary containment."
+                    </blockquote>
+                    <div class="signal-application">
+                        <span class="application-label">
+                            <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><line x1="6" y1="3" x2="6" y2="15"></line><circle cx="18" cy="6" r="3"></circle><circle cx="6" cy="18" r="3"></circle><path d="M18 9a9 9 0 0 1-9 9"></path></svg>
+                            How I Apply It
+                        </span>
+                        <p class="application-text">Architected in <a href="https://github.com/akkireddy-challa/nova" target="_blank" rel="noopener noreferrer">Nova</a> and GitOps pipelines with automated regression and headless browser verification gates before merging.</p>
+                    </div>
+                    <div class="signal-badges">
+                        <span class="signal-badge">#AICoding</span>
+                        <span class="signal-badge">#AutomatedTesting</span>
+                        <span class="signal-badge">#GitOps</span>
+                    </div>
+                    <footer class="signal-speaker">
+                        <div class="speaker-info">
+                            <strong class="speaker-name">AI Coding Workflow</strong>
+                            <span class="speaker-role">Idea to Tested Implementation (AI Engineer)</span>
+                        </div>
+                        <div class="signal-actions">
+                            <a href="blog.html#signal-ai-coding" class="signal-link" aria-label="Explore signal in Field Radar">
+                                <span>Field Radar</span>
+                                <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><polyline points="9 18 15 12 9 6"></polyline></svg>
+                            </a>
+                            <a href="https://ai.engineer/api/data/transcript?slug=ai-coding-workflow&amp;format=json" class="signal-link" target="_blank" rel="noopener noreferrer" aria-label="AI Coding Workflow talk transcript">
+                                <span>Transcript</span>
+                                <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
+                            </a>
+                        </div>
+                    </footer>
+                </article>
+
+                <!-- Signal 4: Dex Horthy (Humanlayer) -->
+                <article class="signal-card" id="signal-humanlayer">
+                    <div class="signal-meta">
+                        <span class="signal-tag">Agent Reliability &amp; Latency</span>
+                        <span class="signal-conf">AI Engineer Summit 2024</span>
+                    </div>
+                    <blockquote class="signal-quote">
+                        "Autonomous loops degrade rapidly when tool execution latency exceeds 1.5 seconds. Production agent systems require deterministic execution budgets, eager human-in-the-loop approvals for destructive operations, and aggressive tool schema minimization."
+                    </blockquote>
+                    <div class="signal-application">
+                        <span class="application-label">
+                            <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><line x1="6" y1="3" x2="6" y2="15"></line><circle cx="18" cy="6" r="3"></circle><circle cx="6" cy="18" r="3"></circle><path d="M18 9a9 9 0 0 1-9 9"></path></svg>
+                            How I Apply It
+                        </span>
+                        <p class="application-text">Built guardrail barriers into <a href="https://github.com/akkireddy-challa/k8s-mcp-server" target="_blank" rel="noopener noreferrer">k8s-mcp-server</a> requiring explicit human approval before running mutating Kubernetes commands.</p>
+                    </div>
+                    <div class="signal-badges">
+                        <span class="signal-badge">#HumanInTheLoop</span>
+                        <span class="signal-badge">#SafetyGuardrails</span>
+                        <span class="signal-badge">#ProductionSRE</span>
+                    </div>
+                    <footer class="signal-speaker">
+                        <div class="speaker-info">
+                            <strong class="speaker-name">Dex Horthy</strong>
+                            <span class="speaker-role">Founder &amp; CEO, Humanlayer</span>
+                        </div>
+                        <div class="signal-actions">
+                            <a href="blog.html#signal-humanlayer" class="signal-link" aria-label="Explore signal in Field Radar">
+                                <span>Field Radar</span>
+                                <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><polyline points="9 18 15 12 9 6"></polyline></svg>
+                            </a>
+                            <a href="https://humanlayer.dev/" class="signal-link" target="_blank" rel="noopener noreferrer" aria-label="Humanlayer and Agent Tool Latency research">
+                                <span>Source</span>
+                                <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
+                            </a>
+                        </div>
+                    </footer>
+                </article>
+
+                <!-- Signal 5: Nir Gazit & Arize Team -->
+                <article class="signal-card" id="signal-phoenix-tracing">
+                    <div class="signal-meta">
+                        <span class="signal-tag">Observability &amp; Tracing</span>
+                        <span class="signal-conf">AI Engineer World's Fair 2024</span>
+                    </div>
+                    <blockquote class="signal-quote">
+                        "You cannot optimize what you do not trace. Standardizing OpenLLMetry with OpenTelemetry traces across every tool invocation and prompt step provides the deterministic telemetry needed to govern multi-agent workflows."
+                    </blockquote>
+                    <div class="signal-application">
+                        <span class="application-label">
+                            <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><line x1="6" y1="3" x2="6" y2="15"></line><circle cx="18" cy="6" r="3"></circle><circle cx="6" cy="18" r="3"></circle><path d="M18 9a9 9 0 0 1-9 9"></path></svg>
+                            How I Apply It
+                        </span>
+                        <p class="application-text">Engineered <a href="https://github.com/akkireddy-challa/phoenix-mcp-eval" target="_blank" rel="noopener noreferrer">phoenix-mcp-eval</a>, enabling autonomous agents to query Arize Phoenix trace logs and compute hallucination scores.</p>
+                    </div>
+                    <div class="signal-badges">
+                        <span class="signal-badge">#Observability</span>
+                        <span class="signal-badge">#LLMEvals</span>
+                        <span class="signal-badge">#Tracing</span>
+                    </div>
+                    <footer class="signal-speaker">
+                        <div class="speaker-info">
+                            <strong class="speaker-name">Nir Gazit</strong>
+                            <span class="speaker-role">Co-Founder &amp; CEO, Traceloop</span>
+                        </div>
+                        <div class="signal-actions">
+                            <a href="blog.html#signal-phoenix-tracing" class="signal-link" aria-label="Explore signal in Field Radar">
+                                <span>Field Radar</span>
+                                <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><polyline points="9 18 15 12 9 6"></polyline></svg>
+                            </a>
+                            <a href="https://github.com/traceloop/openllmetry" class="signal-link" target="_blank" rel="noopener noreferrer" aria-label="OpenLLMetry GitHub Repository">
+                                <span>Source</span>
+                                <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
+                            </a>
+                        </div>
+                    </footer>
+                </article>
+
+                <!-- Signal 6: Kelsey Hightower & Platform Engineering -->
+                <article class="signal-card" id="signal-cloud-platforms">
+                    <div class="signal-meta">
+                        <span class="signal-tag">AI Infrastructure &amp; K8s</span>
+                        <span class="signal-conf">Cloud Native &amp; AI Infrastructure</span>
+                    </div>
+                    <blockquote class="signal-quote">
+                        "AI infrastructure cannot remain an unmanaged silo. GPU scheduling, quota attribution, IAM role isolation, and secret management must inherit the battle-tested disciplines of cloud-native Kubernetes platforms."
+                    </blockquote>
+                    <div class="signal-application">
+                        <span class="application-label">
+                            <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><line x1="6" y1="3" x2="6" y2="15"></line><circle cx="18" cy="6" r="3"></circle><circle cx="6" cy="18" r="3"></circle><path d="M18 9a9 9 0 0 1-9 9"></path></svg>
+                            How I Apply It
+                        </span>
+                        <p class="application-text">Authored production IaC modules in <a href="https://github.com/akkireddy-challa/aws-analytics-platform-terraform" target="_blank" rel="noopener noreferrer">aws-analytics-platform-terraform</a> with strict role boundaries and cost controls.</p>
+                    </div>
+                    <div class="signal-badges">
+                        <span class="signal-badge">#Kubernetes</span>
+                        <span class="signal-badge">#PlatformEngineering</span>
+                        <span class="signal-badge">#FinOps</span>
+                    </div>
+                    <footer class="signal-speaker">
+                        <div class="speaker-info">
+                            <strong class="speaker-name">Kelsey Hightower</strong>
+                            <span class="speaker-role">Platform Engineering Advocate</span>
+                        </div>
+                        <div class="signal-actions">
+                            <a href="blog.html#signal-cloud-platforms" class="signal-link" aria-label="Explore signal in Field Radar">
+                                <span>Field Radar</span>
+                                <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><polyline points="9 18 15 12 9 6"></polyline></svg>
+                            </a>
+                            <a href="https://www.cncf.io/" class="signal-link" target="_blank" rel="noopener noreferrer" aria-label="Cloud Native Computing Foundation">
+                                <span>Source</span>
+                                <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
+                            </a>
+                        </div>
+                    </footer>
+                </article>
+            </div>
+
+            <!-- Footer CTA for Signals -->
+            <div style="margin-top: 36px; text-align: center;">
+                <a href="blog.html#signals" class="btn btn-secondary">
+                    <span>Explore all 6 signals in Field Radar</span>
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+                </a>
+            </div>
         </section>
 
         <!-- Contact & Connect -->

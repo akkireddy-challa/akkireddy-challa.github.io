@@ -1,7 +1,7 @@
 {
-  "timestamp": "2026-11-01T09:02:06Z",
+  "timestamp": "2026-11-01T15:04:53Z",
   "repo_root": "/Users/akkireddy/Desktop/xplore/akkireddy-challa.github.io",
-  "duration_seconds": 0.174,
+  "duration_seconds": 0.221,
   "summary": {
     "total": 140,
     "passed": 140,
@@ -485,7 +485,7 @@
       "feature": "Feature 12: Curated Agent Engineering Signals",
       "name": "Signals section contains takeaway note cards (.signal-card)",
       "passed": true,
-      "message": "Found 4 signal cards"
+      "message": "Found 6 signal cards"
     },
     {
       "test_id": "T1_FEAT_12_03",

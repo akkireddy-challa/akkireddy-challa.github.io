@@ -360,8 +360,38 @@
                 <p class="section-subtitle">Curated takeaways and architectural principles from leading practitioners across the AI engineering conference circuit.</p>
             </div>
             <div class="signals-grid">
-                <!-- Card 1: Samuel Colvin -->
-                <article class="signal-card">
+                <!-- Card 1: Barry Zhang & Mahesh Murag (Anthropic) -->
+                <article class="signal-card" id="signal-skills-architecture">
+                    <div class="signal-meta">
+                        <span class="signal-tag">Skills Architecture</span>
+                        <span class="signal-conf">AI Engineer Summit (San Francisco)</span>
+                    </div>
+                    <blockquote class="signal-quote">
+                        "Don't build monolithic agents; build composable skills instead. Modular skills with strict schemas and isolated boundaries turn unpredictable AI behavior into reliable, testable platform capabilities."
+                    </blockquote>
+                    <div class="signal-application">
+                        <span class="application-label"><i class="fa fa-code-fork" aria-hidden="true"></i> How I Apply It</span>
+                        <p class="application-text">Packaged infrastructure diagnostics into isolated, composable tools across <a href="https://github.com/akkireddy-challa/k8s-mcp-server" target="_blank" rel="noopener noreferrer">k8s-mcp-server</a> and <a href="https://github.com/akkireddy-challa/azure-mcp-platform" target="_blank" rel="noopener noreferrer">azure-mcp-platform</a>.</p>
+                    </div>
+                    <div class="signal-badges">
+                        <span class="signal-badge">#SkillsArchitecture</span>
+                        <span class="signal-badge">#MCP</span>
+                        <span class="signal-badge">#ContextEngineering</span>
+                    </div>
+                    <footer class="signal-speaker">
+                        <div class="speaker-info">
+                            <strong class="speaker-name">Barry Zhang &amp; Mahesh Murag</strong>
+                            <span class="speaker-role">Applied AI &amp; Agent Tool Use, Anthropic</span>
+                        </div>
+                        <a href="https://ai.engineer/api/data/transcript?slug=agent-skills&amp;format=json" class="signal-link" target="_blank" rel="noopener noreferrer" aria-label="Don't Build Agents, Build Skills Instead talk transcript">
+                            <span>Transcript</span>
+                            <i class="fa fa-external-link" aria-hidden="true"></i>
+                        </a>
+                    </footer>
+                </article>
+
+                <!-- Card 2: Samuel Colvin (Pydantic / FastMCP) -->
+                <article class="signal-card" id="signal-fastmcp">
                     <div class="signal-meta">
                         <span class="signal-tag">Protocols &amp; Tooling</span>
                         <span class="signal-conf">AI Engineer World's Fair 2024</span>
@@ -369,6 +399,15 @@
                     <blockquote class="signal-quote">
                         "The fastest path to robust LLM tool use is strict runtime validation and type-safe schema generation. FastMCP eliminates boilerplate, allowing agents to inspect tool definitions deterministically without hallucinations."
                     </blockquote>
+                    <div class="signal-application">
+                        <span class="application-label"><i class="fa fa-code-fork" aria-hidden="true"></i> How I Apply It</span>
+                        <p class="application-text">Standardized Pydantic v2 schemas in <a href="https://github.com/akkireddy-challa/k8s-mcp-server" target="_blank" rel="noopener noreferrer">k8s-mcp-server</a> and <a href="https://github.com/akkireddy-challa/grafana-mcp-observability" target="_blank" rel="noopener noreferrer">grafana-mcp-observability</a> for zero-drift tool schema generation.</p>
+                    </div>
+                    <div class="signal-badges">
+                        <span class="signal-badge">#MCP</span>
+                        <span class="signal-badge">#FastMCP</span>
+                        <span class="signal-badge">#TypeSafety</span>
+                    </div>
                     <footer class="signal-speaker">
                         <div class="speaker-info">
                             <strong class="speaker-name">Samuel Colvin</strong>
@@ -381,8 +420,38 @@
                     </footer>
                 </article>
 
-                <!-- Card 2: Dex Horthy -->
-                <article class="signal-card">
+                <!-- Card 3: AI Coding Workflow -->
+                <article class="signal-card" id="signal-ai-coding">
+                    <div class="signal-meta">
+                        <span class="signal-tag">AI Coding Workflows</span>
+                        <span class="signal-conf">AI Engineer Conference Circuit</span>
+                    </div>
+                    <blockquote class="signal-quote">
+                        "An AI coding workflow cannot rely on LLM self-reporting; it must terminate in deterministic verification gates: automated linting, type-checking, headless test suites, and strict boundary containment."
+                    </blockquote>
+                    <div class="signal-application">
+                        <span class="application-label"><i class="fa fa-code-fork" aria-hidden="true"></i> How I Apply It</span>
+                        <p class="application-text">Architected in <a href="https://github.com/akkireddy-challa/nova" target="_blank" rel="noopener noreferrer">Nova</a> and GitOps pipelines with automated regression and headless browser verification gates before merging.</p>
+                    </div>
+                    <div class="signal-badges">
+                        <span class="signal-badge">#AICoding</span>
+                        <span class="signal-badge">#AutomatedTesting</span>
+                        <span class="signal-badge">#GitOps</span>
+                    </div>
+                    <footer class="signal-speaker">
+                        <div class="speaker-info">
+                            <strong class="speaker-name">AI Coding Workflow</strong>
+                            <span class="speaker-role">Idea to Tested Implementation (AI Engineer)</span>
+                        </div>
+                        <a href="https://ai.engineer/api/data/transcript?slug=ai-coding-workflow&amp;format=json" class="signal-link" target="_blank" rel="noopener noreferrer" aria-label="AI Coding Workflow talk transcript">
+                            <span>Transcript</span>
+                            <i class="fa fa-external-link" aria-hidden="true"></i>
+                        </a>
+                    </footer>
+                </article>
+
+                <!-- Card 4: Dex Horthy (Humanlayer) -->
+                <article class="signal-card" id="signal-humanlayer">
                     <div class="signal-meta">
                         <span class="signal-tag">Agent Reliability &amp; Latency</span>
                         <span class="signal-conf">AI Engineer Summit 2024</span>
@@ -390,6 +459,15 @@
                     <blockquote class="signal-quote">
                         "Autonomous loops degrade rapidly when tool execution latency exceeds 1.5 seconds. Production agent systems require deterministic execution budgets, eager human-in-the-loop approvals for destructive operations, and aggressive tool schema minimization."
                     </blockquote>
+                    <div class="signal-application">
+                        <span class="application-label"><i class="fa fa-code-fork" aria-hidden="true"></i> How I Apply It</span>
+                        <p class="application-text">Built guardrail barriers into <a href="https://github.com/akkireddy-challa/k8s-mcp-server" target="_blank" rel="noopener noreferrer">k8s-mcp-server</a> requiring explicit human approval before running mutating Kubernetes commands.</p>
+                    </div>
+                    <div class="signal-badges">
+                        <span class="signal-badge">#HumanInTheLoop</span>
+                        <span class="signal-badge">#SafetyGuardrails</span>
+                        <span class="signal-badge">#ProductionSRE</span>
+                    </div>
                     <footer class="signal-speaker">
                         <div class="speaker-info">
                             <strong class="speaker-name">Dex Horthy</strong>
@@ -402,29 +480,8 @@
                     </footer>
                 </article>
 
-                <!-- Card 3: Mahesh Murag -->
-                <article class="signal-card">
-                    <div class="signal-meta">
-                        <span class="signal-tag">Agent Architecture</span>
-                        <span class="signal-conf">AI Engineer Summit (San Francisco)</span>
-                    </div>
-                    <blockquote class="signal-quote">
-                        "Effective agent architecture is less about complex graph routing and more about context engineering. Minimize prompt distraction, curate compact tool interfaces, and evaluate agent decision boundaries on isolated golden trajectories."
-                    </blockquote>
-                    <footer class="signal-speaker">
-                        <div class="speaker-info">
-                            <strong class="speaker-name">Mahesh Murag</strong>
-                            <span class="speaker-role">Applied AI &amp; Agent Tool Use, Anthropic</span>
-                        </div>
-                        <a href="https://www.anthropic.com/research/building-effective-agents" class="signal-link" target="_blank" rel="noopener noreferrer" aria-label="Anthropic Building Effective Agents research">
-                            <span>Source</span>
-                            <i class="fa fa-external-link" aria-hidden="true"></i>
-                        </a>
-                    </footer>
-                </article>
-
-                <!-- Card 4: Nir Gazit -->
-                <article class="signal-card">
+                <!-- Card 5: Nir Gazit & Arize Team -->
+                <article class="signal-card" id="signal-phoenix-tracing">
                     <div class="signal-meta">
                         <span class="signal-tag">Observability &amp; Tracing</span>
                         <span class="signal-conf">AI Engineer World's Fair 2024</span>
@@ -432,12 +489,51 @@
                     <blockquote class="signal-quote">
                         "You cannot optimize what you do not trace. Standardizing OpenLLMetry with OpenTelemetry traces across every tool invocation and prompt step provides the deterministic telemetry needed to govern multi-agent workflows."
                     </blockquote>
+                    <div class="signal-application">
+                        <span class="application-label"><i class="fa fa-code-fork" aria-hidden="true"></i> How I Apply It</span>
+                        <p class="application-text">Engineered <a href="https://github.com/akkireddy-challa/phoenix-mcp-eval" target="_blank" rel="noopener noreferrer">phoenix-mcp-eval</a>, enabling autonomous agents to query Arize Phoenix trace logs and compute hallucination scores.</p>
+                    </div>
+                    <div class="signal-badges">
+                        <span class="signal-badge">#Observability</span>
+                        <span class="signal-badge">#LLMEvals</span>
+                        <span class="signal-badge">#Tracing</span>
+                    </div>
                     <footer class="signal-speaker">
                         <div class="speaker-info">
                             <strong class="speaker-name">Nir Gazit</strong>
                             <span class="speaker-role">Co-Founder &amp; CEO, Traceloop</span>
                         </div>
                         <a href="https://github.com/traceloop/openllmetry" class="signal-link" target="_blank" rel="noopener noreferrer" aria-label="OpenLLMetry GitHub Repository">
+                            <span>Source</span>
+                            <i class="fa fa-external-link" aria-hidden="true"></i>
+                        </a>
+                    </footer>
+                </article>
+
+                <!-- Card 6: Kelsey Hightower & Platform Engineering -->
+                <article class="signal-card" id="signal-cloud-platforms">
+                    <div class="signal-meta">
+                        <span class="signal-tag">AI Infrastructure &amp; K8s</span>
+                        <span class="signal-conf">Cloud Native &amp; AI Infrastructure</span>
+                    </div>
+                    <blockquote class="signal-quote">
+                        "AI infrastructure cannot remain an unmanaged silo. GPU scheduling, quota attribution, IAM role isolation, and secret management must inherit the battle-tested disciplines of cloud-native Kubernetes platforms."
+                    </blockquote>
+                    <div class="signal-application">
+                        <span class="application-label"><i class="fa fa-code-fork" aria-hidden="true"></i> How I Apply It</span>
+                        <p class="application-text">Authored production IaC modules in <a href="https://github.com/akkireddy-challa/aws-analytics-platform-terraform" target="_blank" rel="noopener noreferrer">aws-analytics-platform-terraform</a> with strict role boundaries and cost controls.</p>
+                    </div>
+                    <div class="signal-badges">
+                        <span class="signal-badge">#Kubernetes</span>
+                        <span class="signal-badge">#PlatformEngineering</span>
+                        <span class="signal-badge">#FinOps</span>
+                    </div>
+                    <footer class="signal-speaker">
+                        <div class="speaker-info">
+                            <strong class="speaker-name">Kelsey Hightower</strong>
+                            <span class="speaker-role">Platform Engineering Advocate</span>
+                        </div>
+                        <a href="https://www.cncf.io/" class="signal-link" target="_blank" rel="noopener noreferrer" aria-label="Cloud Native Computing Foundation">
                             <span>Source</span>
                             <i class="fa fa-external-link" aria-hidden="true"></i>
                         </a>
